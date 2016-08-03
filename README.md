@@ -1,10 +1,10 @@
 # WebShop
 
 #Technologies: Java 8
-  #Spring MVC - divide business logic, view and controller
-  #Hibernate - access DB
-  #JSP/JSTL - markup
-  #MySQL - DB Server
+  Spring MVC - divide business logic, view and controller
+  Hibernate - access DB
+  JSP/JSTL - markup
+  MySQL - DB Server
   Bootstrap - UI
   JQuery, Dropzone, Select2, Slick - Processing user actions
   Log4J - logging errors, debug info
@@ -17,7 +17,7 @@
   Maven - Build system
   Tomcat - Server
   
-Used design patterns:
+#Used design patterns:
   Bridge - dividing abstraction and implementation
     https://github.com/Vova2805/WebShop/tree/master/src/main/java/com/webshop/service
     https://github.com/Vova2805/WebShop/tree/master/src/main/java/com/webshop/dao
