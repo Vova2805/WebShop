@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="768c11fe-a185-4908-9532-629b6809287a" name="Default" comment="cleanup">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/info/Pallete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/info/Webshop product backlog.xlsx" />
+    <list default="true" id="768c11fe-a185-4908-9532-629b6809287a" name="Default" comment="documentation">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/info/Webshop product backlog.xlsx" afterPath="$PROJECT_DIR$/src/main/resources/info/Webshop product backlog.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/controller/REST/RestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/controller/REST/RestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoicePartial.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoicePartial.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/comparisonDropdown.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/comparisonDropdown.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/userMenuContent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/userMenuContent.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/wishesDropdown.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/wishesDropdown.jsp" />
     </list>
     <ignored path="webshop-1.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,54 +39,150 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="profile.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/profile.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/ShopController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CommonController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/base/CommonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="381" column="21" selection-start-line="381" selection-start-column="21" selection-end-line="381" selection-end-column="21" />
+            <state relative-caret-position="885">
+              <caret line="374" column="4" selection-start-line="374" selection-start-column="4" selection-end-line="374" selection-end-column="4" />
               <folding>
-                <element signature="e#13848#13849#0" expanded="true" />
-                <element signature="e#13914#13915#0" expanded="true" />
+                <element signature="docComment;class#CommonController#0" expanded="false" />
+                <element signature="n#!!doc;n#filterFacade#0;n#CommonController#0" expanded="false" />
+                <element signature="n#!!doc;n#getCurrentCurrency#0;n#CommonController#0" expanded="false" />
+                <element signature="docComment;method#getModel#0;class#CommonController#0" expanded="false" />
+                <element signature="method#getModel#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#toGSON#0;class#CommonController#0" expanded="false" />
+                <element signature="method#toGSON#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#getIdFromString#0;class#CommonController#0" expanded="false" />
+                <element signature="method#getIdFromString#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#getIntsFromStrings#0;class#CommonController#0" expanded="false" />
+                <element signature="method#getIntsFromStrings#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#extendedFilteringProducts#0;class#CommonController#0" expanded="false" />
+                <element signature="method#extendedFilteringProducts#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#filteringProducts#0;class#CommonController#0" expanded="false" />
+                <element signature="method#filteringProducts#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#getPropertiesBySIds#0;class#CommonController#0" expanded="false" />
+                <element signature="method#getPropertiesBySIds#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#getGroupsBySIds#0;class#CommonController#0" expanded="false" />
+                <element signature="method#getGroupsBySIds#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#retrieveRelatedProperties#0;class#CommonController#0" expanded="false" />
+                <element signature="method#retrieveRelatedProperties#0;class#CommonController#0" expanded="false" />
+                <element signature="e#7797#7827#0" expanded="false" />
+                <element signature="docComment;method#addPriceRangeToModel#0;class#CommonController#0" expanded="false" />
+                <element signature="method#addPriceRangeToModel#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#addHeaderFormAttributes#0;class#CommonController#0" expanded="false" />
+                <element signature="method#addHeaderFormAttributes#0;class#CommonController#0" expanded="false" />
+                <element signature="class#10870:10994" expanded="false" />
+                <element signature="initializer##0;class#10870:10994" expanded="false" />
+                <element signature="docComment;method#getActiveUser#0;class#CommonController#0" expanded="false" />
+                <element signature="method#getActiveUser#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#updateSession#0;class#CommonController#0" expanded="false" />
+                <element signature="method#updateSession#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#updateSession#1;class#CommonController#0" expanded="false" />
+                <element signature="method#updateSession#1;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#initializeProductImages#0;class#CommonController#0" expanded="false" />
+                <element signature="method#initializeProductImages#0;class#CommonController#0" expanded="false" />
+                <element signature="docComment;method#toGSON#1;class#CommonController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/admin.css">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="941" column="0" selection-start-line="941" selection-start-column="0" selection-end-line="941" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="docComment;method#loginInit#0;class#LoginController#0" expanded="false" />
+                <element signature="method#loginInit#0;class#LoginController#0" expanded="false" />
+                <element signature="docComment;method#login#0;class#LoginController#0" expanded="false" />
+                <element signature="method#login#0;class#LoginController#0" expanded="false" />
+                <element signature="docComment;method#register#0;class#LoginController#0" expanded="false" />
+                <element signature="method#register#0;class#LoginController#0" expanded="false" />
+                <element signature="docComment;method#changeBlock#0;class#LoginController#0" expanded="false" />
+                <element signature="e#2437#2530#0" expanded="false" />
+                <element signature="method#changeBlock#0;class#LoginController#0" expanded="false" />
+                <element signature="docComment;method#customer#0;class#LoginController#0" expanded="false" />
+                <element signature="docComment;method#createUser#0;class#LoginController#0" expanded="false" />
+                <element signature="method#createUser#0;class#LoginController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/ShopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="269" column="43" selection-start-line="269" selection-start-column="43" selection-end-line="269" selection-end-column="43" />
+              <folding>
+                <element signature="n#!!doc;n#productService#0;n#ShopController#0" expanded="false" />
+                <element signature="e#1249#1263#0" expanded="false" />
+                <element signature="docComment;method#toHomePage#0;class#ShopController#0" expanded="false" />
+                <element signature="method#toHomePage#0;class#ShopController#0" expanded="false" />
+                <element signature="docComment;method#getProductDetail#0;class#ShopController#0" expanded="false" />
+                <element signature="method#getProductDetail#0;class#ShopController#0" expanded="false" />
+                <element signature="docComment;method#getQuickViewContent#0;class#ShopController#0" expanded="false" />
+                <element signature="e#2809#2897#0" expanded="false" />
+                <element signature="method#getQuickViewContent#0;class#ShopController#0" expanded="false" />
+                <element signature="docComment;method#addToCart#0;class#ShopController#0" expanded="false" />
+                <element signature="e#3763#3851#0" expanded="false" />
+                <element signature="method#addToCart#0;class#ShopController#0" expanded="false" />
+                <element signature="docComment;method#getProductsByCategoryId#0;class#ShopController#0" expanded="false" />
+                <element signature="e#4699#4776#0" expanded="false" />
+                <element signature="method#getProductsByCategoryId#0;class#ShopController#0" expanded="false" />
+                <element signature="docComment;method#getProductsBySubcategoryId#0;class#ShopController#0" expanded="false" />
+                <element signature="e#7480#7560#0" expanded="false" />
+                <element signature="method#getProductsBySubcategoryId#0;class#ShopController#0" expanded="false" />
+                <element signature="docComment;method#getProductsByGroupId#0;class#ShopController#0" expanded="false" />
+                <element signature="e#10368#10441#0" expanded="false" />
+                <element signature="method#getProductsByGroupId#0;class#ShopController#0" expanded="false" />
+                <element signature="e#12983#13005#0" expanded="false" />
+                <element signature="docComment;method#getSubcategories#0;class#ShopController#0" expanded="false" />
+                <element signature="method#getSubcategories#0;class#ShopController#0" expanded="false" />
+                <element signature="e#14472#14487#0" expanded="false" />
+                <element signature="docComment;method#getSubcategoryGroups#0;class#ShopController#0" expanded="false" />
+                <element signature="method#getSubcategoryGroups#0;class#ShopController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoicePartial.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoicePartial.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nouislider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/nouislider.js">
+      <file leaf-file-name="userMenuContent.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/userMenuContent.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wishesDropdown.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/wishesDropdown.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comparisonDropdown.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/comparisonDropdown.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -90,38 +191,263 @@
       <file leaf-file-name="RestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/REST/RestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="929" column="13" selection-start-line="929" selection-start-column="13" selection-end-line="929" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="627" column="4" selection-start-line="627" selection-start-column="4" selection-end-line="627" selection-end-column="4" />
+              <folding>
+                <element signature="docComment;class#RestController#0" expanded="false" />
+                <element signature="e#1382#1393#0" expanded="false" />
+                <element signature="n#!!doc;n#categoryService#0;n#RestController#0" expanded="false" />
+                <element signature="e#2415#2434#0" expanded="false" />
+                <element signature="docComment;method#getCategories#0;class#RestController#0" expanded="false" />
+                <element signature="e#2560#2656#0" expanded="false" />
+                <element signature="method#getCategories#0;class#RestController#0" expanded="false" />
+                <element signature="e#2871#2972#0" expanded="false" />
+                <element signature="method#getCategoryById#0;class#RestController#0" expanded="false" />
+                <element signature="e#3436#3564#0" expanded="false" />
+                <element signature="method#changeCategory#0;class#RestController#0" expanded="false" />
+                <element signature="e#4056#4133#0" expanded="false" />
+                <element signature="method#categoryImageUpload#0;class#RestController#0" expanded="false" />
+                <element signature="n#!!doc;n#getSubcategories#0;n#RestController#0" expanded="false" />
+                <element signature="e#4949#5048#0" expanded="false" />
+                <element signature="method#getSubcategories#0;class#RestController#0" expanded="false" />
+                <element signature="e#5282#5386#0" expanded="false" />
+                <element signature="method#getSubcategoryById#0;class#RestController#0" expanded="false" />
+                <element signature="e#5819#5943#0" expanded="false" />
+                <element signature="method#getSubcategoriesByCategoryTitle#0;class#RestController#0" expanded="false" />
+                <element signature="e#6504#6635#0" expanded="false" />
+                <element signature="method#changeSubcategory#0;class#RestController#0" expanded="false" />
+                <element signature="e#7607#7687#0" expanded="false" />
+                <element signature="method#subcategoryImageUpload#0;class#RestController#0" expanded="false" />
+                <element signature="e#8505#8646#0" expanded="false" />
+                <element signature="method#getSubcategoriesByCategoryId#0;class#RestController#0" expanded="false" />
+                <element signature="e#9123#9138#0" expanded="false" />
+                <element signature="e#9144#9236#0" expanded="false" />
+                <element signature="method#getAllGroups#0;class#RestController#0" expanded="false" />
+                <element signature="e#9477#9574#0" expanded="false" />
+                <element signature="method#getGroupById#0;class#RestController#0" expanded="false" />
+                <element signature="e#10047#10167#0" expanded="false" />
+                <element signature="method#getGroupBySubcategoryId#0;class#RestController#0" expanded="false" />
+                <element signature="e#10757#10882#0" expanded="false" />
+                <element signature="method#changeGroup#0;class#RestController#0" expanded="false" />
+                <element signature="e#11886#11959#0" expanded="false" />
+                <element signature="method#groupImageUpload#0;class#RestController#0" expanded="false" />
+                <element signature="e#12698#12835#0" expanded="false" />
+                <element signature="method#getGroupsBySubcategoryId#0;class#RestController#0" expanded="false" />
+                <element signature="e#13330#13344#0" expanded="false" />
+                <element signature="e#13350#13467#0" expanded="false" />
+                <element signature="method#getProducts#0;class#RestController#0" expanded="false" />
+                <element signature="e#14940#15059#0" expanded="false" />
+                <element signature="method#createProduct#0;class#RestController#0" expanded="false" />
+                <element signature="method#imageUploadingCheck#0;class#RestController#0" expanded="false" />
+                <element signature="e#15822#15894#0" expanded="false" />
+                <element signature="method#imageUpload#0;class#RestController#0" expanded="false" />
+                <element signature="method#imageUploadByURL#0;class#RestController#0" expanded="false" />
+                <element signature="e#17629#17716#0" expanded="false" />
+                <element signature="method#deleteImage#0;class#RestController#0" expanded="false" />
+                <element signature="e#18289#18414#0" expanded="false" />
+                <element signature="method#updateProduct#0;class#RestController#0" expanded="false" />
+                <element signature="e#20538#20681#0" expanded="false" />
+                <element signature="method#updateDescription#0;class#RestController#0" expanded="false" />
+                <element signature="docComment;method#descriptionImageUpload#0;class#RestController#0" expanded="false" />
+                <element signature="e#21720#21812#0" expanded="false" />
+                <element signature="method#descriptionImageUpload#0;class#RestController#0" expanded="false" />
+                <element signature="e#22891#22985#0" expanded="false" />
+                <element signature="method#removeDescriptionImage#0;class#RestController#0" expanded="false" />
+                <element signature="e#23739#23846#0" expanded="false" />
+                <element signature="method#getProductsByCategory#0;class#RestController#0" expanded="false" />
+                <element signature="e#25382#25492#0" expanded="false" />
+                <element signature="method#getProductsBySubcategory#0;class#RestController#0" expanded="false" />
+                <element signature="e#27079#27182#0" expanded="false" />
+                <element signature="method#getProductsByGroup#0;class#RestController#0" expanded="false" />
+                <element signature="n#!!doc;n#getAllImages#0;n#RestController#0" expanded="false" />
+                <element signature="e#28652#28744#0" expanded="false" />
+                <element signature="e#28881#28978#0" expanded="false" />
+                <element signature="method#getImageById#0;class#RestController#0" expanded="false" />
+                <element signature="e#29418#29527#0" expanded="false" />
+                <element signature="method#getProductImageById#0;class#RestController#0" expanded="false" />
+                <element signature="e#30201#30224#0" expanded="false" />
+                <element signature="e#30230#30357#0" expanded="false" />
+                <element signature="method#getAllPropertyClasses#0;class#RestController#0" expanded="false" />
+                <element signature="e#30574#30703#0" expanded="false" />
+                <element signature="method#addPropertyClass#0;class#RestController#0" expanded="false" />
+                <element signature="e#31079#31212#0" expanded="false" />
+                <element signature="method#getPropertyClassById#0;class#RestController#0" expanded="false" />
+                <element signature="e#31599#31732#0" expanded="false" />
+                <element signature="method#updatePropertyClass#0;class#RestController#0" expanded="false" />
+                <element signature="e#32329#32468#0" expanded="false" />
+                <element signature="method#deletePropertyClass#0;class#RestController#0" expanded="false" />
+                <element signature="n#!!doc;n#getAllProperties#0;n#RestController#0" expanded="false" />
+                <element signature="e#32854#32976#0" expanded="false" />
+                <element signature="method#getAllProperties#0;class#RestController#0" expanded="false" />
+                <element signature="e#33168#33291#0" expanded="false" />
+                <element signature="method#addProperty#0;class#RestController#0" expanded="false" />
+                <element signature="e#33603#33730#0" expanded="false" />
+                <element signature="method#getPropertyById#0;class#RestController#0" expanded="false" />
+                <element signature="e#34072#34199#0" expanded="false" />
+                <element signature="method#updatePropertyById#0;class#RestController#0" expanded="false" />
+                <element signature="e#35183#35318#0" expanded="false" />
+                <element signature="method#deletePropertyById#0;class#RestController#0" expanded="false" />
+                <element signature="n#!!doc;n#getAllAdvertisements#0;n#RestController#0" expanded="false" />
+                <element signature="e#35702#35817#0" expanded="false" />
+                <element signature="method#getAllAdvertisements#0;class#RestController#0" expanded="false" />
+                <element signature="e#36031#36147#0" expanded="false" />
+                <element signature="method#addAdvertisement#0;class#RestController#0" expanded="false" />
+                <element signature="e#36541#36661#0" expanded="false" />
+                <element signature="method#getAdvertisementById#0;class#RestController#0" expanded="false" />
+                <element signature="e#37018#37088#0" expanded="false" />
+                <element signature="method#changeAdvertisementImage#0;class#RestController#0" expanded="false" />
+                <element signature="e#37936#38057#0" expanded="false" />
+                <element signature="method#updateAdvertisementById#0;class#RestController#0" expanded="false" />
+                <element signature="e#38588#38711#0" expanded="false" />
+                <element signature="method#deleteAdvertisementById#0;class#RestController#0" expanded="false" />
+                <element signature="n#!!doc;n#getCustomers#0;n#RestController#0" expanded="false" />
+                <element signature="e#39057#39152#0" expanded="false" />
+                <element signature="method#getCustomers#0;class#RestController#0" expanded="false" />
+                <element signature="e#39338#39438#0" expanded="false" />
+                <element signature="method#getCustomerById#0;class#RestController#0" expanded="false" />
+                <element signature="e#39902#40028#0" expanded="false" />
+                <element signature="method#changeCustomer#0;class#RestController#0" expanded="false" />
+                <element signature="e#41464#41543#0" expanded="false" />
+                <element signature="method#changeCustomerPassword#0;class#RestController#0" expanded="false" />
+                <element signature="e#42443#42519#0" expanded="false" />
+                <element signature="method#changeCustomerImage#0;class#RestController#0" expanded="false" />
+                <element signature="e#43309#43332#0" expanded="false" />
+                <element signature="e#43338#43460#0" expanded="false" />
+                <element signature="method#getAllSubscribed#0;class#RestController#0" expanded="false" />
+                <element signature="e#43709#43836#0" expanded="false" />
+                <element signature="method#getSubscribedUserById#0;class#RestController#0" expanded="false" />
+                <element signature="e#44163#44286#0" expanded="false" />
+                <element signature="method#addSubscribedUser#0;class#RestController#0" expanded="false" />
+                <element signature="n#!!doc;n#getOrders#0;n#RestController#0" expanded="false" />
+                <element signature="e#45491#45583#0" expanded="false" />
+                <element signature="e#45717#45810#0" expanded="false" />
+                <element signature="method#addOrder#0;class#RestController#0" expanded="false" />
+                <element signature="e#47813#47910#0" expanded="false" />
+                <element signature="method#getOrderById#0;class#RestController#0" expanded="false" />
+                <element signature="e#48371#48469#0" expanded="false" />
+                <element signature="method#changeOrder#0;class#RestController#0" expanded="false" />
+                <element signature="e#49040#49170#0" expanded="false" />
+                <element signature="method#deleteOrdersById#0;class#RestController#0" expanded="false" />
+                <element signature="e#49486#49499#0" expanded="false" />
+                <element signature="method#getAllCartsFunc#0;class#RestController#0" expanded="false" />
+                <element signature="e#49837#49953#0" expanded="false" />
+                <element signature="method#getAllCarts#0;class#RestController#0" expanded="false" />
+                <element signature="e#50164#50286#0" expanded="false" />
+                <element signature="method#getAllCartsTotalPrice#0;class#RestController#0" expanded="false" />
+                <element signature="e#50687#50808#0" expanded="false" />
+                <element signature="method#getCartItemById#0;class#RestController#0" expanded="false" />
+                <element signature="e#51411#51533#0" expanded="false" />
+                <element signature="method#changeCartAmount#0;class#RestController#0" expanded="false" />
+                <element signature="e#52060#52184#0" expanded="false" />
+                <element signature="method#deleteCart#0;class#RestController#0" expanded="false" />
+                <element signature="e#52709#52800#0" expanded="false" />
+                <element signature="method#addToCart#0;class#RestController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="299" column="4" selection-start-line="299" selection-start-column="4" selection-end-line="299" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!doc;n#categoryService#0;n#AdminController#0" expanded="false" />
+                <element signature="e#1600#1619#0" expanded="false" />
+                <element signature="method#initModelAndView#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#adminPanel#0;class#AdminController#0" expanded="false" />
+                <element signature="e#1987#2032#0" expanded="false" />
+                <element signature="method#adminPanel#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#adminDashboard#0;class#AdminController#0" expanded="false" />
+                <element signature="method#adminDashboard#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#adminFull#0;class#AdminController#0" expanded="false" />
+                <element signature="method#adminFull#0;class#AdminController#0" expanded="false" />
+                <element signature="e#8863#8888#0" expanded="false" />
+                <element signature="docComment;method#adminAdvertisement#0;class#AdminController#0" expanded="false" />
+                <element signature="method#adminAdvertisement#0;class#AdminController#0" expanded="false" />
+                <element signature="method#adminProperties#0;class#AdminController#0" expanded="false" />
+                <element signature="method#adminUsers#0;class#AdminController#0" expanded="false" />
+                <element signature="method#adminOrders#0;class#AdminController#0" expanded="false" />
+                <element signature="method#adminProfile#0;class#AdminController#0" expanded="false" />
+                <element signature="e#11555#11574#0" expanded="false" />
+                <element signature="docComment;method#addCategory#0;class#AdminController#0" expanded="false" />
+                <element signature="e#11755#11833#0" expanded="false" />
+                <element signature="method#addCategory#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#deleteCategory#0;class#AdminController#0" expanded="false" />
+                <element signature="e#12343#12428#0" expanded="false" />
+                <element signature="method#deleteCategory#0;class#AdminController#0" expanded="false" />
+                <element signature="e#12739#12761#0" expanded="false" />
+                <element signature="docComment;method#addSubcategory#0;class#AdminController#0" expanded="false" />
+                <element signature="e#12916#12996#0" expanded="false" />
+                <element signature="method#addSubcategory#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#deleteSubcategory#0;class#AdminController#0" expanded="false" />
+                <element signature="e#13766#13848#0" expanded="false" />
+                <element signature="method#deleteSubcategory#0;class#AdminController#0" expanded="false" />
+                <element signature="e#14176#14191#0" expanded="false" />
+                <element signature="docComment;method#addGroup#0;class#AdminController#0" expanded="false" />
+                <element signature="e#14302#14370#0" expanded="false" />
+                <element signature="method#addGroup#0;class#AdminController#0" expanded="false" />
+                <element signature="e#15046#15121#0" expanded="false" />
+                <element signature="method#deleteGroup#0;class#AdminController#0" expanded="false" />
+                <element signature="e#15414#15431#0" expanded="false" />
+                <element signature="docComment;method#addProduct#0;class#AdminController#0" expanded="false" />
+                <element signature="e#15579#15646#0" expanded="false" />
+                <element signature="method#addProduct#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#deleteProduct#0;class#AdminController#0" expanded="false" />
+                <element signature="e#16404#16478#0" expanded="false" />
+                <element signature="method#deleteProduct#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#updateImagesView#0;class#AdminController#0" expanded="false" />
+                <element signature="e#16932#17018#0" expanded="false" />
+                <element signature="method#updateImagesView#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#imagesThumblnails#0;class#AdminController#0" expanded="false" />
+                <element signature="e#17792#17878#0" expanded="false" />
+                <element signature="method#imagesThumblnails#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#addNewDescriptionPart#0;class#AdminController#0" expanded="false" />
+                <element signature="e#18506#18591#0" expanded="false" />
+                <element signature="method#addNewDescriptionPart#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#changeDescriptionPart#0;class#AdminController#0" expanded="false" />
+                <element signature="method#changeDescriptionPart#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#removeDescriptionPart#0;class#AdminController#0" expanded="false" />
+                <element signature="e#20392#20491#0" expanded="false" />
+                <element signature="method#removeDescriptionPart#0;class#AdminController#0" expanded="false" />
+                <element signature="e#21261#21283#0" expanded="false" />
+                <element signature="docComment;method#adminAdvertisementsContent#0;class#AdminController#0" expanded="false" />
+                <element signature="e#21404#21470#0" expanded="false" />
+                <element signature="method#adminAdvertisementsContent#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#adminAdvertisementsContentById#0;class#AdminController#0" expanded="false" />
+                <element signature="e#21897#21968#0" expanded="false" />
+                <element signature="method#adminAdvertisementsContentById#0;class#AdminController#0" expanded="false" />
+                <element signature="e#22517#22536#0" expanded="false" />
+                <element signature="docComment;method#adminPanelPropertiesInner#0;class#AdminController#0" expanded="false" />
+                <element signature="e#22691#22777#0" expanded="false" />
+                <element signature="method#adminPanelPropertiesInner#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#adminPanelPropertyClassContentInner#0;class#AdminController#0" expanded="false" />
+                <element signature="e#23694#23777#0" expanded="false" />
+                <element signature="method#adminPanelPropertyClassContentInner#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#adminPropertiesContent#0;class#AdminController#0" expanded="false" />
+                <element signature="e#24571#24643#0" expanded="false" />
+                <element signature="method#adminPropertiesContent#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#addProperty#0;class#AdminController#0" expanded="false" />
+                <element signature="e#25163#25236#0" expanded="false" />
+                <element signature="method#addProperty#0;class#AdminController#0" expanded="false" />
+                <element signature="docComment;method#addPropertyClass#0;class#AdminController#0" expanded="false" />
+                <element signature="e#26113#26202#0" expanded="false" />
+                <element signature="method#addPropertyClass#0;class#AdminController#0" expanded="false" />
+                <element signature="e#26665#26679#0" expanded="false" />
+                <element signature="docComment;method#toggleEnabled#0;class#AdminController#0" expanded="false" />
+                <element signature="e#26791#26877#0" expanded="false" />
+                <element signature="method#toggleEnabled#0;class#AdminController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate/database.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DescriptionPart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/DescriptionPart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,10 +480,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/adminFullContent.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/fullContentSingleItem.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/descriptionPartPartial.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/productDescriptionsPartial.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/partial/dashboard/adminDashboardPartial.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/partial/orders/ordersPartial.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/partial/properties/adminPropertiesPartial.jsp" />
@@ -173,7 +495,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/comparisonsPartial.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/emptyListMessagePartial.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoiceContentPartial.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoicePartial.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/ordersContent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/ordersList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/ordersPartial.jsp" />
@@ -197,13 +518,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pages/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/site.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/ShopController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/shop/partial/productView.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/nouislider.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/model/classes/DescriptionPart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/model/classes/extra/ImageDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/site.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoicePartial.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/userMenuContent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/wishesDropdown.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/comparisonDropdown.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/controller/REST/RestController.java" />
       </list>
     </option>
@@ -275,6 +601,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,6 +739,36 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -440,6 +810,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -449,6 +871,226 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filterFacade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="REST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop-1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1032,7 +1674,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470187114386</updated>
-      <workItem from="1470187121032" duration="6566000" />
+      <workItem from="1470187121032" duration="10351000" />
     </task>
     <task id="LOCAL-00001" summary="cleanup project">
       <created>1470191928132</created>
@@ -1069,11 +1711,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470193724442</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="documentation">
+      <created>1470194808085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1470194808085</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6566000" />
+    <option name="totallyTimeSpent" value="10351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1098,7 +1747,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29975125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36069652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19527364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1109,7 +1758,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29899856" sideWeight="0.15049751" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29899856" sideWeight="0.8495025" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27181688" sideWeight="0.8495025" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1781,8 @@
     <MESSAGE value="complete fix" />
     <MESSAGE value="dump" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1148,152 +1798,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/commentsPartial.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/personalDataEditablePartPartial.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/personalDataPartial.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/reviewsPartial.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/wishlistPartial.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/invoicePrint.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/modal/partial/addProductToCartPartial.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/modal/partial/quickViewContentPartial.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/modal/modalWrapper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/reference/adminReferences.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/reference/commonReferences.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/reference/shopReferences.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/layout/advertisementSlider.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/layout/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="53" column="83" selection-start-line="53" selection-start-column="83" selection-end-line="53" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/layout/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/layout/headerBottom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          <folding>
-            <marker date="1470191970000" expanded="true" signature="2497:2528" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/layout/headerOption.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/layout/headerTop.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/layout/menuSection.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-225">
@@ -1422,10 +1926,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/dump/webshopdb_customer.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/dump/webshopdb_image.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/partial/productView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="122" column="81" selection-start-line="122" selection-start-column="81" selection-end-line="122" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="941" column="0" selection-start-line="941" selection-start-column="0" selection-end-line="941" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/nouislider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dc2a7879-2df4-4aa9-99d6-9d3ec39d3311/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/DescriptionPart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/extra/ImageDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/treeview/groupTreeViewItem.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/site.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="262">
+          <caret line="415" column="35" selection-start-line="415" selection-start-column="25" selection-end-line="415" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
             <element signature="e#26#70#0" expanded="false" />
@@ -1441,7 +2033,6 @@
             <element signature="n#!!block;n#uploadItemImage#0" expanded="false" />
             <element signature="e#1160#1619#0" expanded="false" />
             <element signature="e#1422#1613#0" expanded="false" />
-            <element signature="e#1637#1651#0" expanded="false" />
             <element signature="n#!!doc;n#changeContent#0" expanded="false" />
             <element signature="n#!!block;n#changeContent#0" expanded="false" />
             <element signature="e#1732#2059#0" expanded="false" />
@@ -1459,7 +2050,6 @@
             <element signature="n#!!block;n#toogleVisibility#0" expanded="false" />
             <element signature="n#!!doc;n#tooglePartsVisibility#0" expanded="false" />
             <element signature="n#!!block;n#tooglePartsVisibility#0" expanded="false" />
-            <element signature="e#3034#3050#0" expanded="false" />
             <element signature="n#!!doc;n#selectImage#0" expanded="false" />
             <element signature="n#!!block;n#selectImage#0" expanded="false" />
             <element signature="e#3197#3702#0" expanded="false" />
@@ -1495,16 +2085,12 @@
             <element signature="e#7129#7535#0" expanded="false" />
             <element signature="e#7594#7643#0" expanded="false" />
             <element signature="n#!!doc;n#addTreeViewItem#0" expanded="false" />
-            <element signature="n#!!block;n#addTreeViewItem#0" expanded="false" />
-            <element signature="e#7855#8328#0" expanded="false" />
-            <element signature="e#8006#8183#0" expanded="false" />
             <element signature="e#8242#8322#0" expanded="false" />
             <element signature="n#!!doc;n#deleteTreeViewItem#0" expanded="false" />
             <element signature="n#!!block;n#deleteTreeViewItem#0" expanded="false" />
             <element signature="e#8593#8929#0" expanded="false" />
             <element signature="e#8717#8784#0" expanded="false" />
             <element signature="e#8843#8923#0" expanded="false" />
-            <element signature="e#8948#8967#0" expanded="false" />
             <element signature="n#!!doc;n#treeviewInit#0" expanded="false" />
             <element signature="n#!!block;n#treeviewInit#0" expanded="false" />
             <element signature="e#9065#9222#0" expanded="false" />
@@ -1526,8 +2112,6 @@
             <element signature="e#11231#11363#0" expanded="false" />
             <element signature="e#11495#11544#0" expanded="false" />
             <element signature="n#!!doc;n#addCategory#0" expanded="false" />
-            <element signature="n#!!block;n#addCategory#0" expanded="false" />
-            <element signature="e#11660#11972#0" expanded="false" />
             <element signature="e#11785#11827#0" expanded="false" />
             <element signature="e#11886#11966#0" expanded="false" />
             <element signature="n#!!doc;n#removeCategory#0" expanded="false" />
@@ -1645,27 +2229,260 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/profile.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/treeview/adminContentTreeview.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database/dump/webshopdb_customer.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/treeview/subcategoryTreeViewItem.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/partial/content/treeview/categoryTreeViewItem.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/partial/orders/ordersPartial.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/ordersList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/ordersContent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;method#initModelAndView#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#initModelAndView#0;class#CustomerController#0" expanded="false" />
+            <element signature="docComment;method#profile#0;class#CustomerController#0" expanded="false" />
+            <element signature="e#1570#1612#0" expanded="false" />
+            <element signature="method#profile#0;class#CustomerController#0" expanded="false" />
+            <element signature="e#3143#3165#0" expanded="false" />
+            <element signature="docComment;method#accountPersonalData#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#accountPersonalData#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#accountWishlist#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#accountCart#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#accountOrders#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#accountComments#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#accountReviews#0;class#CustomerController#0" expanded="false" />
+            <element signature="method#accountComparisons#0;class#CustomerController#0" expanded="false" />
+            <element signature="docComment;method#accountCheckout#0;class#CustomerController#0" expanded="false" />
+            <element signature="e#6497#6539#0" expanded="false" />
+            <element signature="method#accountCheckout#0;class#CustomerController#0" expanded="false" />
+            <element signature="docComment;method#orderInvoice#0;class#CustomerController#0" expanded="false" />
+            <element signature="e#7634#7676#0" expanded="false" />
+            <element signature="method#orderInvoice#0;class#CustomerController#0" expanded="false" />
+            <element signature="docComment;method#orderInvoicePrinted#0;class#CustomerController#0" expanded="false" />
+            <element signature="e#9047#9124#0" expanded="false" />
+            <element signature="method#orderInvoicePrinted#0;class#CustomerController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="e#1117#1128#0" expanded="false" />
+            <element signature="method#homePage#0;class#HomeController#0" expanded="false" />
+            <element signature="e#3001#3074#0" expanded="false" />
+            <element signature="method#updateMenu#0;class#HomeController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;method#loginInit#0;class#LoginController#0" expanded="false" />
+            <element signature="method#loginInit#0;class#LoginController#0" expanded="false" />
+            <element signature="docComment;method#login#0;class#LoginController#0" expanded="false" />
+            <element signature="method#login#0;class#LoginController#0" expanded="false" />
+            <element signature="docComment;method#register#0;class#LoginController#0" expanded="false" />
+            <element signature="method#register#0;class#LoginController#0" expanded="false" />
+            <element signature="docComment;method#changeBlock#0;class#LoginController#0" expanded="false" />
+            <element signature="e#2437#2530#0" expanded="false" />
+            <element signature="method#changeBlock#0;class#LoginController#0" expanded="false" />
+            <element signature="docComment;method#customer#0;class#LoginController#0" expanded="false" />
+            <element signature="docComment;method#createUser#0;class#LoginController#0" expanded="false" />
+            <element signature="method#createUser#0;class#LoginController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoiceContentPartial.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1172">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="269" column="43" selection-start-line="269" selection-start-column="43" selection-end-line="269" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc;n#productService#0;n#ShopController#0" expanded="false" />
+            <element signature="e#1249#1263#0" expanded="false" />
+            <element signature="docComment;method#toHomePage#0;class#ShopController#0" expanded="false" />
+            <element signature="method#toHomePage#0;class#ShopController#0" expanded="false" />
+            <element signature="docComment;method#getProductDetail#0;class#ShopController#0" expanded="false" />
+            <element signature="method#getProductDetail#0;class#ShopController#0" expanded="false" />
+            <element signature="docComment;method#getQuickViewContent#0;class#ShopController#0" expanded="false" />
+            <element signature="e#2809#2897#0" expanded="false" />
+            <element signature="method#getQuickViewContent#0;class#ShopController#0" expanded="false" />
+            <element signature="docComment;method#addToCart#0;class#ShopController#0" expanded="false" />
+            <element signature="e#3763#3851#0" expanded="false" />
+            <element signature="method#addToCart#0;class#ShopController#0" expanded="false" />
+            <element signature="docComment;method#getProductsByCategoryId#0;class#ShopController#0" expanded="false" />
+            <element signature="e#4699#4776#0" expanded="false" />
+            <element signature="method#getProductsByCategoryId#0;class#ShopController#0" expanded="false" />
+            <element signature="docComment;method#getProductsBySubcategoryId#0;class#ShopController#0" expanded="false" />
+            <element signature="e#7480#7560#0" expanded="false" />
+            <element signature="method#getProductsBySubcategoryId#0;class#ShopController#0" expanded="false" />
+            <element signature="docComment;method#getProductsByGroupId#0;class#ShopController#0" expanded="false" />
+            <element signature="e#10368#10441#0" expanded="false" />
+            <element signature="method#getProductsByGroupId#0;class#ShopController#0" expanded="false" />
+            <element signature="e#12983#13005#0" expanded="false" />
+            <element signature="docComment;method#getSubcategories#0;class#ShopController#0" expanded="false" />
+            <element signature="method#getSubcategories#0;class#ShopController#0" expanded="false" />
+            <element signature="e#14472#14487#0" expanded="false" />
+            <element signature="docComment;method#getSubcategoryGroups#0;class#ShopController#0" expanded="false" />
+            <element signature="method#getSubcategoryGroups#0;class#ShopController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/invoicePartial.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/userMenuContent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/wishesDropdown.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="484" column="6" selection-start-line="484" selection-start-column="6" selection-end-line="484" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/customer/partial/menu/comparisonDropdown.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/info/Pallete.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/base/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="374" column="4" selection-start-line="374" selection-start-column="4" selection-end-line="374" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#CommonController#0" expanded="false" />
+            <element signature="n#!!doc;n#filterFacade#0;n#CommonController#0" expanded="false" />
+            <element signature="n#!!doc;n#getCurrentCurrency#0;n#CommonController#0" expanded="false" />
+            <element signature="docComment;method#getModel#0;class#CommonController#0" expanded="false" />
+            <element signature="method#getModel#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#toGSON#0;class#CommonController#0" expanded="false" />
+            <element signature="method#toGSON#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#getIdFromString#0;class#CommonController#0" expanded="false" />
+            <element signature="method#getIdFromString#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#getIntsFromStrings#0;class#CommonController#0" expanded="false" />
+            <element signature="method#getIntsFromStrings#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#extendedFilteringProducts#0;class#CommonController#0" expanded="false" />
+            <element signature="method#extendedFilteringProducts#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#filteringProducts#0;class#CommonController#0" expanded="false" />
+            <element signature="method#filteringProducts#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#getPropertiesBySIds#0;class#CommonController#0" expanded="false" />
+            <element signature="method#getPropertiesBySIds#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#getGroupsBySIds#0;class#CommonController#0" expanded="false" />
+            <element signature="method#getGroupsBySIds#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#retrieveRelatedProperties#0;class#CommonController#0" expanded="false" />
+            <element signature="method#retrieveRelatedProperties#0;class#CommonController#0" expanded="false" />
+            <element signature="e#7797#7827#0" expanded="false" />
+            <element signature="docComment;method#addPriceRangeToModel#0;class#CommonController#0" expanded="false" />
+            <element signature="method#addPriceRangeToModel#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#addHeaderFormAttributes#0;class#CommonController#0" expanded="false" />
+            <element signature="method#addHeaderFormAttributes#0;class#CommonController#0" expanded="false" />
+            <element signature="class#10870:10994" expanded="false" />
+            <element signature="initializer##0;class#10870:10994" expanded="false" />
+            <element signature="docComment;method#getActiveUser#0;class#CommonController#0" expanded="false" />
+            <element signature="method#getActiveUser#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#updateSession#0;class#CommonController#0" expanded="false" />
+            <element signature="method#updateSession#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#updateSession#1;class#CommonController#0" expanded="false" />
+            <element signature="method#updateSession#1;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#initializeProductImages#0;class#CommonController#0" expanded="false" />
+            <element signature="method#initializeProductImages#0;class#CommonController#0" expanded="false" />
+            <element signature="docComment;method#toGSON#1;class#CommonController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1677,98 +2494,261 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database/dump/webshopdb_image.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/REST/RestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/shop/partial/productView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="122" column="81" selection-start-line="122" selection-start-column="81" selection-end-line="122" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="941" column="0" selection-start-line="941" selection-start-column="0" selection-end-line="941" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/nouislider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dc2a7879-2df4-4aa9-99d6-9d3ec39d3311/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/DescriptionPart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/base/CommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="381" column="21" selection-start-line="381" selection-start-column="21" selection-end-line="381" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="627" column="4" selection-start-line="627" selection-start-column="4" selection-end-line="627" selection-end-column="4" />
           <folding>
-            <element signature="e#13848#13849#0" expanded="true" />
-            <element signature="e#13914#13915#0" expanded="true" />
+            <element signature="docComment;class#RestController#0" expanded="false" />
+            <element signature="e#1382#1393#0" expanded="false" />
+            <element signature="n#!!doc;n#categoryService#0;n#RestController#0" expanded="false" />
+            <element signature="e#2415#2434#0" expanded="false" />
+            <element signature="docComment;method#getCategories#0;class#RestController#0" expanded="false" />
+            <element signature="e#2560#2656#0" expanded="false" />
+            <element signature="method#getCategories#0;class#RestController#0" expanded="false" />
+            <element signature="e#2871#2972#0" expanded="false" />
+            <element signature="method#getCategoryById#0;class#RestController#0" expanded="false" />
+            <element signature="e#3436#3564#0" expanded="false" />
+            <element signature="method#changeCategory#0;class#RestController#0" expanded="false" />
+            <element signature="e#4056#4133#0" expanded="false" />
+            <element signature="method#categoryImageUpload#0;class#RestController#0" expanded="false" />
+            <element signature="n#!!doc;n#getSubcategories#0;n#RestController#0" expanded="false" />
+            <element signature="e#4949#5048#0" expanded="false" />
+            <element signature="method#getSubcategories#0;class#RestController#0" expanded="false" />
+            <element signature="e#5282#5386#0" expanded="false" />
+            <element signature="method#getSubcategoryById#0;class#RestController#0" expanded="false" />
+            <element signature="e#5819#5943#0" expanded="false" />
+            <element signature="method#getSubcategoriesByCategoryTitle#0;class#RestController#0" expanded="false" />
+            <element signature="e#6504#6635#0" expanded="false" />
+            <element signature="method#changeSubcategory#0;class#RestController#0" expanded="false" />
+            <element signature="e#7607#7687#0" expanded="false" />
+            <element signature="method#subcategoryImageUpload#0;class#RestController#0" expanded="false" />
+            <element signature="e#8505#8646#0" expanded="false" />
+            <element signature="method#getSubcategoriesByCategoryId#0;class#RestController#0" expanded="false" />
+            <element signature="e#9123#9138#0" expanded="false" />
+            <element signature="e#9144#9236#0" expanded="false" />
+            <element signature="method#getAllGroups#0;class#RestController#0" expanded="false" />
+            <element signature="e#9477#9574#0" expanded="false" />
+            <element signature="method#getGroupById#0;class#RestController#0" expanded="false" />
+            <element signature="e#10047#10167#0" expanded="false" />
+            <element signature="method#getGroupBySubcategoryId#0;class#RestController#0" expanded="false" />
+            <element signature="e#10757#10882#0" expanded="false" />
+            <element signature="method#changeGroup#0;class#RestController#0" expanded="false" />
+            <element signature="e#11886#11959#0" expanded="false" />
+            <element signature="method#groupImageUpload#0;class#RestController#0" expanded="false" />
+            <element signature="e#12698#12835#0" expanded="false" />
+            <element signature="method#getGroupsBySubcategoryId#0;class#RestController#0" expanded="false" />
+            <element signature="e#13330#13344#0" expanded="false" />
+            <element signature="e#13350#13467#0" expanded="false" />
+            <element signature="method#getProducts#0;class#RestController#0" expanded="false" />
+            <element signature="e#14940#15059#0" expanded="false" />
+            <element signature="method#createProduct#0;class#RestController#0" expanded="false" />
+            <element signature="method#imageUploadingCheck#0;class#RestController#0" expanded="false" />
+            <element signature="e#15822#15894#0" expanded="false" />
+            <element signature="method#imageUpload#0;class#RestController#0" expanded="false" />
+            <element signature="method#imageUploadByURL#0;class#RestController#0" expanded="false" />
+            <element signature="e#17629#17716#0" expanded="false" />
+            <element signature="method#deleteImage#0;class#RestController#0" expanded="false" />
+            <element signature="e#18289#18414#0" expanded="false" />
+            <element signature="method#updateProduct#0;class#RestController#0" expanded="false" />
+            <element signature="e#20538#20681#0" expanded="false" />
+            <element signature="method#updateDescription#0;class#RestController#0" expanded="false" />
+            <element signature="docComment;method#descriptionImageUpload#0;class#RestController#0" expanded="false" />
+            <element signature="e#21720#21812#0" expanded="false" />
+            <element signature="method#descriptionImageUpload#0;class#RestController#0" expanded="false" />
+            <element signature="e#22891#22985#0" expanded="false" />
+            <element signature="method#removeDescriptionImage#0;class#RestController#0" expanded="false" />
+            <element signature="e#23739#23846#0" expanded="false" />
+            <element signature="method#getProductsByCategory#0;class#RestController#0" expanded="false" />
+            <element signature="e#25382#25492#0" expanded="false" />
+            <element signature="method#getProductsBySubcategory#0;class#RestController#0" expanded="false" />
+            <element signature="e#27079#27182#0" expanded="false" />
+            <element signature="method#getProductsByGroup#0;class#RestController#0" expanded="false" />
+            <element signature="n#!!doc;n#getAllImages#0;n#RestController#0" expanded="false" />
+            <element signature="e#28652#28744#0" expanded="false" />
+            <element signature="e#28881#28978#0" expanded="false" />
+            <element signature="method#getImageById#0;class#RestController#0" expanded="false" />
+            <element signature="e#29418#29527#0" expanded="false" />
+            <element signature="method#getProductImageById#0;class#RestController#0" expanded="false" />
+            <element signature="e#30201#30224#0" expanded="false" />
+            <element signature="e#30230#30357#0" expanded="false" />
+            <element signature="method#getAllPropertyClasses#0;class#RestController#0" expanded="false" />
+            <element signature="e#30574#30703#0" expanded="false" />
+            <element signature="method#addPropertyClass#0;class#RestController#0" expanded="false" />
+            <element signature="e#31079#31212#0" expanded="false" />
+            <element signature="method#getPropertyClassById#0;class#RestController#0" expanded="false" />
+            <element signature="e#31599#31732#0" expanded="false" />
+            <element signature="method#updatePropertyClass#0;class#RestController#0" expanded="false" />
+            <element signature="e#32329#32468#0" expanded="false" />
+            <element signature="method#deletePropertyClass#0;class#RestController#0" expanded="false" />
+            <element signature="n#!!doc;n#getAllProperties#0;n#RestController#0" expanded="false" />
+            <element signature="e#32854#32976#0" expanded="false" />
+            <element signature="method#getAllProperties#0;class#RestController#0" expanded="false" />
+            <element signature="e#33168#33291#0" expanded="false" />
+            <element signature="method#addProperty#0;class#RestController#0" expanded="false" />
+            <element signature="e#33603#33730#0" expanded="false" />
+            <element signature="method#getPropertyById#0;class#RestController#0" expanded="false" />
+            <element signature="e#34072#34199#0" expanded="false" />
+            <element signature="method#updatePropertyById#0;class#RestController#0" expanded="false" />
+            <element signature="e#35183#35318#0" expanded="false" />
+            <element signature="method#deletePropertyById#0;class#RestController#0" expanded="false" />
+            <element signature="n#!!doc;n#getAllAdvertisements#0;n#RestController#0" expanded="false" />
+            <element signature="e#35702#35817#0" expanded="false" />
+            <element signature="method#getAllAdvertisements#0;class#RestController#0" expanded="false" />
+            <element signature="e#36031#36147#0" expanded="false" />
+            <element signature="method#addAdvertisement#0;class#RestController#0" expanded="false" />
+            <element signature="e#36541#36661#0" expanded="false" />
+            <element signature="method#getAdvertisementById#0;class#RestController#0" expanded="false" />
+            <element signature="e#37018#37088#0" expanded="false" />
+            <element signature="method#changeAdvertisementImage#0;class#RestController#0" expanded="false" />
+            <element signature="e#37936#38057#0" expanded="false" />
+            <element signature="method#updateAdvertisementById#0;class#RestController#0" expanded="false" />
+            <element signature="e#38588#38711#0" expanded="false" />
+            <element signature="method#deleteAdvertisementById#0;class#RestController#0" expanded="false" />
+            <element signature="n#!!doc;n#getCustomers#0;n#RestController#0" expanded="false" />
+            <element signature="e#39057#39152#0" expanded="false" />
+            <element signature="method#getCustomers#0;class#RestController#0" expanded="false" />
+            <element signature="e#39338#39438#0" expanded="false" />
+            <element signature="method#getCustomerById#0;class#RestController#0" expanded="false" />
+            <element signature="e#39902#40028#0" expanded="false" />
+            <element signature="method#changeCustomer#0;class#RestController#0" expanded="false" />
+            <element signature="e#41464#41543#0" expanded="false" />
+            <element signature="method#changeCustomerPassword#0;class#RestController#0" expanded="false" />
+            <element signature="e#42443#42519#0" expanded="false" />
+            <element signature="method#changeCustomerImage#0;class#RestController#0" expanded="false" />
+            <element signature="e#43309#43332#0" expanded="false" />
+            <element signature="e#43338#43460#0" expanded="false" />
+            <element signature="method#getAllSubscribed#0;class#RestController#0" expanded="false" />
+            <element signature="e#43709#43836#0" expanded="false" />
+            <element signature="method#getSubscribedUserById#0;class#RestController#0" expanded="false" />
+            <element signature="e#44163#44286#0" expanded="false" />
+            <element signature="method#addSubscribedUser#0;class#RestController#0" expanded="false" />
+            <element signature="n#!!doc;n#getOrders#0;n#RestController#0" expanded="false" />
+            <element signature="e#45491#45583#0" expanded="false" />
+            <element signature="e#45717#45810#0" expanded="false" />
+            <element signature="method#addOrder#0;class#RestController#0" expanded="false" />
+            <element signature="e#47813#47910#0" expanded="false" />
+            <element signature="method#getOrderById#0;class#RestController#0" expanded="false" />
+            <element signature="e#48371#48469#0" expanded="false" />
+            <element signature="method#changeOrder#0;class#RestController#0" expanded="false" />
+            <element signature="e#49040#49170#0" expanded="false" />
+            <element signature="method#deleteOrdersById#0;class#RestController#0" expanded="false" />
+            <element signature="e#49486#49499#0" expanded="false" />
+            <element signature="method#getAllCartsFunc#0;class#RestController#0" expanded="false" />
+            <element signature="e#49837#49953#0" expanded="false" />
+            <element signature="method#getAllCarts#0;class#RestController#0" expanded="false" />
+            <element signature="e#50164#50286#0" expanded="false" />
+            <element signature="method#getAllCartsTotalPrice#0;class#RestController#0" expanded="false" />
+            <element signature="e#50687#50808#0" expanded="false" />
+            <element signature="method#getCartItemById#0;class#RestController#0" expanded="false" />
+            <element signature="e#51411#51533#0" expanded="false" />
+            <element signature="method#changeCartAmount#0;class#RestController#0" expanded="false" />
+            <element signature="e#52060#52184#0" expanded="false" />
+            <element signature="method#deleteCart#0;class#RestController#0" expanded="false" />
+            <element signature="e#52709#52800#0" expanded="false" />
+            <element signature="method#addToCart#0;class#RestController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/model/classes/extra/ImageDecorator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/REST/RestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="929" column="13" selection-start-line="929" selection-start-column="13" selection-end-line="929" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="299" column="4" selection-start-line="299" selection-start-column="4" selection-end-line="299" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc;n#categoryService#0;n#AdminController#0" expanded="false" />
+            <element signature="e#1600#1619#0" expanded="false" />
+            <element signature="method#initModelAndView#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#adminPanel#0;class#AdminController#0" expanded="false" />
+            <element signature="e#1987#2032#0" expanded="false" />
+            <element signature="method#adminPanel#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#adminDashboard#0;class#AdminController#0" expanded="false" />
+            <element signature="method#adminDashboard#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#adminFull#0;class#AdminController#0" expanded="false" />
+            <element signature="method#adminFull#0;class#AdminController#0" expanded="false" />
+            <element signature="e#8863#8888#0" expanded="false" />
+            <element signature="docComment;method#adminAdvertisement#0;class#AdminController#0" expanded="false" />
+            <element signature="method#adminAdvertisement#0;class#AdminController#0" expanded="false" />
+            <element signature="method#adminProperties#0;class#AdminController#0" expanded="false" />
+            <element signature="method#adminUsers#0;class#AdminController#0" expanded="false" />
+            <element signature="method#adminOrders#0;class#AdminController#0" expanded="false" />
+            <element signature="method#adminProfile#0;class#AdminController#0" expanded="false" />
+            <element signature="e#11555#11574#0" expanded="false" />
+            <element signature="docComment;method#addCategory#0;class#AdminController#0" expanded="false" />
+            <element signature="e#11755#11833#0" expanded="false" />
+            <element signature="method#addCategory#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#deleteCategory#0;class#AdminController#0" expanded="false" />
+            <element signature="e#12343#12428#0" expanded="false" />
+            <element signature="method#deleteCategory#0;class#AdminController#0" expanded="false" />
+            <element signature="e#12739#12761#0" expanded="false" />
+            <element signature="docComment;method#addSubcategory#0;class#AdminController#0" expanded="false" />
+            <element signature="e#12916#12996#0" expanded="false" />
+            <element signature="method#addSubcategory#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#deleteSubcategory#0;class#AdminController#0" expanded="false" />
+            <element signature="e#13766#13848#0" expanded="false" />
+            <element signature="method#deleteSubcategory#0;class#AdminController#0" expanded="false" />
+            <element signature="e#14176#14191#0" expanded="false" />
+            <element signature="docComment;method#addGroup#0;class#AdminController#0" expanded="false" />
+            <element signature="e#14302#14370#0" expanded="false" />
+            <element signature="method#addGroup#0;class#AdminController#0" expanded="false" />
+            <element signature="e#15046#15121#0" expanded="false" />
+            <element signature="method#deleteGroup#0;class#AdminController#0" expanded="false" />
+            <element signature="e#15414#15431#0" expanded="false" />
+            <element signature="docComment;method#addProduct#0;class#AdminController#0" expanded="false" />
+            <element signature="e#15579#15646#0" expanded="false" />
+            <element signature="method#addProduct#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#deleteProduct#0;class#AdminController#0" expanded="false" />
+            <element signature="e#16404#16478#0" expanded="false" />
+            <element signature="method#deleteProduct#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#updateImagesView#0;class#AdminController#0" expanded="false" />
+            <element signature="e#16932#17018#0" expanded="false" />
+            <element signature="method#updateImagesView#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#imagesThumblnails#0;class#AdminController#0" expanded="false" />
+            <element signature="e#17792#17878#0" expanded="false" />
+            <element signature="method#imagesThumblnails#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#addNewDescriptionPart#0;class#AdminController#0" expanded="false" />
+            <element signature="e#18506#18591#0" expanded="false" />
+            <element signature="method#addNewDescriptionPart#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#changeDescriptionPart#0;class#AdminController#0" expanded="false" />
+            <element signature="method#changeDescriptionPart#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#removeDescriptionPart#0;class#AdminController#0" expanded="false" />
+            <element signature="e#20392#20491#0" expanded="false" />
+            <element signature="method#removeDescriptionPart#0;class#AdminController#0" expanded="false" />
+            <element signature="e#21261#21283#0" expanded="false" />
+            <element signature="docComment;method#adminAdvertisementsContent#0;class#AdminController#0" expanded="false" />
+            <element signature="e#21404#21470#0" expanded="false" />
+            <element signature="method#adminAdvertisementsContent#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#adminAdvertisementsContentById#0;class#AdminController#0" expanded="false" />
+            <element signature="e#21897#21968#0" expanded="false" />
+            <element signature="method#adminAdvertisementsContentById#0;class#AdminController#0" expanded="false" />
+            <element signature="e#22517#22536#0" expanded="false" />
+            <element signature="docComment;method#adminPanelPropertiesInner#0;class#AdminController#0" expanded="false" />
+            <element signature="e#22691#22777#0" expanded="false" />
+            <element signature="method#adminPanelPropertiesInner#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#adminPanelPropertyClassContentInner#0;class#AdminController#0" expanded="false" />
+            <element signature="e#23694#23777#0" expanded="false" />
+            <element signature="method#adminPanelPropertyClassContentInner#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#adminPropertiesContent#0;class#AdminController#0" expanded="false" />
+            <element signature="e#24571#24643#0" expanded="false" />
+            <element signature="method#adminPropertiesContent#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#addProperty#0;class#AdminController#0" expanded="false" />
+            <element signature="e#25163#25236#0" expanded="false" />
+            <element signature="method#addProperty#0;class#AdminController#0" expanded="false" />
+            <element signature="docComment;method#addPropertyClass#0;class#AdminController#0" expanded="false" />
+            <element signature="e#26113#26202#0" expanded="false" />
+            <element signature="method#addPropertyClass#0;class#AdminController#0" expanded="false" />
+            <element signature="e#26665#26679#0" expanded="false" />
+            <element signature="docComment;method#toggleEnabled#0;class#AdminController#0" expanded="false" />
+            <element signature="e#26791#26877#0" expanded="false" />
+            <element signature="method#toggleEnabled#0;class#AdminController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/info/Pallete.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/controller/ui/ShopController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

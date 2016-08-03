@@ -14,7 +14,7 @@
             <li>
                 <c:set var="items" value="${menuComparisons}" scope="request"/>
                 <c:set var="href" value="/profile?block=comparisons" scope="request"/>
-                <jsp:include page="userMenuContent.jsp"/>
+                    <%--<jsp:include page="userMenuContent.jsp"/>--%>
             </li>
         </c:otherwise>
     </c:choose>

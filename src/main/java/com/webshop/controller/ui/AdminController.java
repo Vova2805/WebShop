@@ -274,7 +274,7 @@ public class AdminController extends CommonController {
         ModelAndView modelAndView = getModel("admin/partial/content/treeview/categoryTreeViewItem");
         Category category = new Category("New category");
         category = categoryService.add(category);
-        modelAndView.addObject("category", category);
+        modelAndView.addObject("loopCategory", category);
         return modelAndView;
     }
 
@@ -315,7 +315,7 @@ public class AdminController extends CommonController {
             Category category = categoryService.get(id);
             Subcategory subcategory = new Subcategory(id, "New subcategory", category);
             subcategory = subcategoryService.add(subcategory);
-            modelAndView.addObject("subcategory", subcategory);
+            modelAndView.addObject("loopSubcategory", subcategory);
         }
         return modelAndView;
     }
@@ -357,7 +357,7 @@ public class AdminController extends CommonController {
             Subcategory subcategory = subcategoryService.get(id);
             SubcategoryGroup subcategoryGroup = new SubcategoryGroup(id, "New group", subcategory);
             subcategoryGroup = groupService.add(subcategoryGroup);
-            modelAndView.addObject("group", subcategoryGroup);
+            modelAndView.addObject("loopGroup", subcategoryGroup);
         }
         return modelAndView;
     }
@@ -394,7 +394,7 @@ public class AdminController extends CommonController {
             SubcategoryGroup subcategoryGroup = groupService.get(id);
             Product product = new Product(id, "New product", subcategoryGroup);
             product = productService.add(product);
-            modelAndView.addObject("product", product);
+            modelAndView.addObject("loopProduct", product);
         }
         return modelAndView;
     }

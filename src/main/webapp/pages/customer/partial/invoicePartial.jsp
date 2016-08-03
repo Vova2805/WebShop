@@ -7,8 +7,10 @@
     </h1>
 </section>
 <jsp:include page="invoiceContentPartial.jsp"/>
-<div class="row">
-    <a class="aa-add-to-cart-btn pull-right" href="/profile/invoice/print">Print</a>
+<div class="container">
+    <div class="wrapper">
+        <a class="aa-add-to-cart-btn pull-right" href="/profile/invoice/print">Print</a>
+    </div>
 </div>
 
 

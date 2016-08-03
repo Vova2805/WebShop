@@ -374,8 +374,6 @@ public class RestController extends CommonController {
             image.saveImagesToFS(bytes);
             image.initializeImages();
             return toGSON(image);
-        } else {
-            //show message
         }
         return "";
     }
@@ -659,10 +657,6 @@ public class RestController extends CommonController {
                 Product product = productService.get(productId);
                 Image image = imageService.get(imageId);
                 image.initializeImages();
-//                if(!product.getImagesByProductId().contains(image))
-//                {
-//                    return "";
-//                }
                 return toGSON(image);
             } catch (Exception e) {
                 logger.error(e.getMessage());
