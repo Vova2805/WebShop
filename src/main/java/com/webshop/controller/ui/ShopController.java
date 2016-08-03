@@ -144,6 +144,10 @@ public class ShopController extends CommonController {
      HttpSession session) {
         ModelAndView modelAndView = getModel("shop/products");
         updateSession(user, session);
+        //Values by default
+        if (limit == null || limit == 0) limit = 4;
+        if (page == null || page == 0) page = 1;
+
         if (id != null) {
             Category category = categoryService.get(id);
             if (category != null) {
@@ -203,6 +207,10 @@ public class ShopController extends CommonController {
      HttpSession session) throws Exception {
         ModelAndView modelAndView = getModel("shop/products");
         updateSession(user, session);
+        //Values by default
+        if (limit == null || limit == 0) limit = 4;
+        if (page == null || page == 0) page = 1;
+
         if (id != null) {
             Subcategory subcategory = subcategoryService.get(id);
             if (subcategory != null) {
@@ -262,6 +270,10 @@ public class ShopController extends CommonController {
      HttpSession session) throws Exception {
         ModelAndView modelAndView = getModel("shop/products");
         updateSession(user, session);
+        //Values by default
+        if (limit == null || limit == 0) limit = 4;
+        if (page == null || page == 0) page = 1;
+
         if (id != null) {
             SubcategoryGroup group = groupService.get(id);
             if (group != null) {
@@ -270,6 +282,7 @@ public class ShopController extends CommonController {
                 //skip groups filter
                 List<SubcategoryGroup> groups = new ArrayList<>();
                 List<Property> properties = getPropertiesBySIds(propertiesIds);
+
                 IFilterFacade.ExtendedFiltering extendedFiltering = extendedFilteringProducts(page, limit, goods, properties, groups, priceFrom, priceTo, sortBy, sortDirection);
                 goods = extendedFiltering.getGoods();
 

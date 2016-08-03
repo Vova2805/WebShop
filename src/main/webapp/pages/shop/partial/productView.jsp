@@ -117,5 +117,14 @@
             <span class="fa fa-search"></span>
         </a>
     </div>
-    <span class="aa-badge aa-sale cursor-hand">SALE!</span>
+    <c:if test="${productItem.availableAmount==0}">
+        <span class="aa-badge aa-sold-out cursor-hand">NOT AVAILABLE</span>
+    </c:if>
+    <c:if test="${productItem.availableAmount<=10 && productItem.availableAmount>0}">
+        <span class="aa-badge aa-hot cursor-hand">ENDS</span>
+    </c:if>
+    <c:if test="${productItem.availableAmount>10}">
+        <span class="aa-badge aa-sale cursor-hand">SALE</span>
+    </c:if>
+
 </li>
