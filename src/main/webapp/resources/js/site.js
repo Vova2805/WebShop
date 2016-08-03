@@ -1,6 +1,8 @@
-$.ready(function () {
+//region General methods
 
-});
+/**
+ * Change products view to list view
+ */
 jQuery("#list-catg").click(function (e) {
     e.preventDefault(e);
     jQuery(".aa-product-catg").addClass("list");
@@ -10,31 +12,6 @@ jQuery("#grid-catg").click(function (e) {
     jQuery(".aa-product-catg").removeClass("list");
 });
 
-
-/**
- *
- * @param goodId
- */
-function changeViewModalContent(href, goodId) {
-    $.ajax({
-        type: "GET",
-        url: href,
-        data: {
-            id: goodId
-        },
-        success: function (response) {
-            $("#productDetailsModalPart").html(response);
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log(errorThrown);
-            location.reload();
-        }
-    });
-}
-
-function submitUploadFileInput(inputFileId) {
-    $("#" + inputFileId).click();
-}
 
 /**
  * Return first parrent node with such tagname
@@ -57,10 +34,38 @@ function getParentByTagName(node, tagname) {
     return parent;
 }
 
-function formSubmit(id) {
-    document.getElementById(id).click();
+/**
+ * Using for submitting file uploading
+ * @param inputFileId
+ */
+function submitUploadFileInput(inputFileId) {
+    $("#" + inputFileId).click();
 }
 
+/**
+ * Uploading image for some item (category,sub,group)
+ * @param type
+ * @param objectId
+ */
+function uploadItemImage(type, objectId) {
+    var oMyForm = new FormData();
+    oMyForm.append("file", files[0]);
+    $.ajax({
+        url: "api/" + type + "/" + objectId + "/image",
+        data: oMyForm,
+        type: "POST",
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,
+        dataType: "json",
+        success: function (response) {
+            var d = new Date();
+            var src = response.images['standart_128'] + "?time=" + d.getTime();
+            $('#itemImage').prop('src', src + '?' + Math.random());
+        }
+    });
+}
+//endregion
 
 //region Admin
 /**
@@ -82,11 +87,20 @@ function changeContent(blockTitle) {
         }
     });
 }
-
+/**
+ * Changing inner content by reloading page
+ * @param type
+ * @param id
+ */
 function changeAdminContentInnerBlock(type, id) {
     window.location.href = "/admin?block=full&type=" + type + "&id=" + id;
 }
 
+/**
+ * AJAX changing content
+ * @param type
+ * @param id
+ */
 function changeAdminPropertiesInnerBlock(type, id) {
     $.ajax({
         type: "GET",
@@ -100,15 +114,31 @@ function changeAdminPropertiesInnerBlock(type, id) {
     });
 }
 
+/**
+ * Hide/Show element with elementId identifier
+ * @param elementId
+ */
 function toogleVisibility(elementId) {
     $("#" + elementId).toggleClass("hidden-form");
 }
 
+/**
+ * Toggle visibility for pair
+ * @param id1
+ * @param id2
+ */
 function tooglePartsVisibility(id1, id2) {
     toogleVisibility(id1);
     toogleVisibility(id2);
 }
+
 //region Product
+
+/**
+ * Selecting smal image and refreshing large
+ * @param productId
+ * @param imageId
+ */
 function selectImage(productId, imageId) {
     $.ajax({
         type: "GET",
@@ -126,6 +156,11 @@ function selectImage(productId, imageId) {
     });
 }
 
+/**
+ * AJAX deleting image with ui changing
+ * @param productId
+ * @param imageId
+ */
 function deleteImage(productId, imageId) {
     $.ajax({
         type: "DELETE",
@@ -148,9 +183,13 @@ function deleteImage(productId, imageId) {
             console.log(errorThrown);
         }
     });
-
 }
 
+/**
+ * AJAX append html of new description
+ * @param productId
+ * @param containerId
+ */
 function addDescription(productId, containerId) {
     $.ajax({
         type: "GET",
@@ -164,6 +203,12 @@ function addDescription(productId, containerId) {
     });
 }
 
+/**
+ * Removing description using AJAX and admin controller
+ * @param containerId
+ * @param productId
+ * @param descriptionId
+ */
 function removeDescription(containerId, productId, descriptionId) {
     $.ajax({
         type: "GET",
@@ -177,6 +222,11 @@ function removeDescription(containerId, productId, descriptionId) {
     });
 }
 
+/**
+ * Asynchronous uploading image
+ * @param productId
+ * @param descriptionId
+ */
 function uploadDescriptionImage(productId, descriptionId) {
     var oMyForm = new FormData();
     oMyForm.append("file", files[0]);
@@ -203,6 +253,11 @@ function uploadDescriptionImage(productId, descriptionId) {
     });
 }
 
+/**
+ * Removing image Asynchronously
+ * @param productId
+ * @param descriptionId
+ */
 function removeDescriptionImage(productId, descriptionId) {
     $.ajax({
         url: "api/goods/" + productId + "/descriptions/" + descriptionId + "/image",
@@ -269,8 +324,12 @@ function deleteTreeViewItem(parrentId, itemId, requestPath, itemContainerId, con
 }
 
 //endregion
+
 //region Categories
 
+/**
+ * Init tree view
+ */
 function treeviewInit() {
     $(".sidebar a").on("click", function () {
         $(".sidebar a").removeClass("active-option");
@@ -279,6 +338,7 @@ function treeviewInit() {
     });
 }
 
+//reloading page
 function updateContentTreeView() {
     location.reload();
 }
@@ -320,8 +380,6 @@ function categorySelection(categorySelectId, subcategorySelectId, groupSelectId)
 /**
  * Change content of group dropdown if subcategory is changed
  */
-
-
 function subcategorySelection(subcategorySelectId, groupSelectId) {
     var selected = $('#' + subcategorySelectId + ' :selected').val();
     $('#' + groupSelectId).html("");
@@ -349,7 +407,9 @@ function subcategorySelection(subcategorySelectId, groupSelectId) {
     });
 }
 
-
+/**
+ * Adding category Asynchronously
+ */
 function addCategory() {
     $.ajax({
         type: "POST",
@@ -365,6 +425,10 @@ function addCategory() {
     });
 }
 
+/**
+ * REmoving category
+ * @param categoryId
+ */
 function removeCategory(categoryId) {
     $.ajax({
         type: "DELETE",
@@ -381,7 +445,9 @@ function removeCategory(categoryId) {
 }
 
 //endregion
+
 //region Properties
+
 function addPropertyClass() {
     $.ajax({
         type: "POST",
@@ -449,6 +515,9 @@ function updatePropertiesTreeView() {
     });
 }
 
+/**
+ * Clear block with editing property details
+ */
 function clearPropertyContentBlock() {
     $('#propertyContentInner').html('');
 }
@@ -457,6 +526,10 @@ function clearPropertyContentBlock() {
 
 //region Orders
 
+/**
+ * Remove order and change view
+ * @param orderId
+ */
 function removeOrder(orderId) {
     $.ajax({
         type: "GET",
@@ -474,6 +547,11 @@ function removeOrder(orderId) {
 //endregion
 
 //region Users
+
+/**
+ * Lock/Unlock user
+ * @param userId
+ */
 function toggleUserLock(userId) {
     $.ajax({
         type: "PUT",
@@ -499,6 +577,40 @@ function toggleUserLock(userId) {
 //endregion
 //endregion
 
+// region Customer
+
+/**
+ * Main function for uploading user image
+ * @param customerId
+ */
+function uploadProfileImage(customerId) {
+    var oMyForm = new FormData();
+    oMyForm.append("file", files[0]);
+    $.ajax({
+        url: "api/customers/" + customerId + "/image",
+        data: oMyForm,
+        type: "POST",
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,
+        dataType: "json",
+        success: function (response) {
+            var d = new Date();
+            var src = response.images['standart_128'] + "?time=" + d.getTime();
+            $('#customerImg' + customerId).prop('src', src + '?' + Math.random());
+            location.reload();
+        }
+    });
+}
+
+//endregion
+
+//region Header
+
+/**
+ * Open header user menu after submitting (for example after adding to cart Menu my cart is sliding down)
+ * @param menuId
+ */
 function openMenu(menuId) {
     $('#' + menuId + "2").click();
     setTimeout(function () {
@@ -506,6 +618,10 @@ function openMenu(menuId) {
     }, 5000);
 }
 
+/**
+ * Updating menu content
+ * @param openMenuId
+ */
 function updateUserMenuItems(openMenuId) {
     $.ajax({
         type: "GET",
@@ -520,7 +636,15 @@ function updateUserMenuItems(openMenuId) {
         }
     });
 }
+//endregion
 
+//region Orders
+
+/**
+ * Call to controller and changing order status by AJAX
+ * @param status
+ * @param orderId
+ */
 function changeOrderStatus(status, orderId) {
     $.ajax({
         type: "POST",
@@ -536,4 +660,220 @@ function changeOrderStatus(status, orderId) {
         }
     });
 }
+
+//endregion
+
+//region Advertisement
+
+/**
+ * Common actions with advertisements
+ * @constructor
+ */
+function AddNewAdvertisement() {
+    $.ajax({
+        type: "POST",
+        url: "api/adv",
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({title: "New advertisement", body: "Advertisement body"}),
+        success: function (response) {
+            $.ajax({
+                type: "GET",
+                url: "admin/adv/" + response.advertisementId,
+                dataType: "html",
+                success: function (response) {
+                    document.getElementById('advertisementContainer').innerHTML += response;
+                    location.reload();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    location.reload();
+                }
+            });
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    });
+}
+
+/**
+ * Deleting advertisement
+ * @param advertId
+ */
+function deleteAdvertisement(advertId) {
+    $.ajax({
+        type: "DELETE",
+        url: "api/adv/" + advertId,
+        dataType: "json",
+        success: function (response) {
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    });
+    location.reload();
+}
+
+/**
+ * Upload image Asynchronously
+ * @param objectId
+ */
+function uploadAdvImage(objectId) {
+    var oMyForm = new FormData();
+    oMyForm.append("file", files[0]);
+    $.ajax({
+        url: "api/adv/" + objectId + "/image",
+        data: oMyForm,
+        type: "POST",
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,
+        dataType: "json",
+        success: function (response) {
+            var d = new Date();
+            var src = response.images['huge'] + "?time=" + d.getTime();
+            $('#advertImg' + objectId).prop('src', src + '?' + Math.random());
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    });
+}
+
+/**
+ * Setting href to product
+ * @param href
+ * @param advId
+ */
+function setHref(href, advId) {
+    $.ajax({
+        contentType: 'application/json; charset=utf-8',
+        type: "POST",
+        url: "api/adv/" + advId,
+        dataType: 'json',
+        data: JSON.stringify({buttonHref: href}),
+        success: function (response) {
+            document.getElementById('ref' + advId).innerHTML = '<a  href="' + href + '"> ' + href + '</a>';
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    });
+}
+
+//endregion
+
+//region Cart
+
+/**
+ * Live total changing
+ * @param cartId
+ * @param amount
+ */
+function changeCartQuantity(cartId, amount) {
+    $.ajax({
+        type: "POST",
+        url: 'api/cart/' + cartId,
+        dataType: "json",
+        contentType: 'application/json; charset=utf-8',
+        data: JSON.stringify({amount: amount}),
+        success: function (response) {
+            $.ajax({
+                type: "GET",
+                url: 'api/cart/total',
+                dataType: "json",
+                success: function (response) {
+                    $("#total").text(response.total);
+                },
+                error: function (code) {
+                    console.log(code);
+                }
+            });
+        },
+        error: function (code) {
+            console.log(code);
+        }
+    });
+}
+
+/**
+ * Removing cart item
+ * @param cartId
+ */
+function removeCartItem(cartId) {
+    $.ajax({
+        type: "DELETE",
+        url: 'api/cart/' + cartId,
+        dataType: "json",
+        success: function (response) {
+            location.reload();
+        },
+        error: function (code) {
+            console.log(code);
+        }
+    });
+}
+
+/**
+ * Adding new cart item
+ * @param productId
+ * @param amount
+ */
+function addProductToCart(productId, amount) {
+    var json = {
+        productId: productId,
+        amount: amount
+    };
+    $.ajax({
+        type: "POST",
+        url: 'api/cart',
+        dataType: "json",
+        contentType: 'application/json; charset=utf-8',
+        data: JSON.stringify(json),
+        success: function (response) {
+            //change menu
+            updateUserMenuItems('cartMenu');
+        },
+        error: function (code) {
+            console.log(code);
+        }
+    });
+}
+
+//endregion
+
+//region View Content
+
+/**
+ * Reloading page with new request
+ * @param block
+ */
+function changeAdminContent(block) {
+    window.location.href = "/admin?block=" + block;
+}
+
+/**
+ *Changing modal view content before it is faded in
+ * @param href
+ * @param goodId
+ */
+function changeViewModalContent(href, goodId) {
+    $.ajax({
+        type: "GET",
+        url: href,
+        data: {
+            id: goodId
+        },
+        success: function (response) {
+            $("#productDetailsModalPart").html(response);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+            location.reload();
+        }
+    });
+}
+//endregion
+
+
 

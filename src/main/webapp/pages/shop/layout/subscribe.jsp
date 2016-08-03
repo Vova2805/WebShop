@@ -33,6 +33,10 @@
     </div>
 </section>
 <script>
+    /**
+     * On submit for subscribe me
+     * Sending mail and saving email to DB
+     */
     $('#subscribeForm').submit(function (e) {
                 e.preventDefault();
                 $.ajax({

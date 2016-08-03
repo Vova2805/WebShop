@@ -49,29 +49,14 @@
 </section>
 
 <script>
+    /**
+     * For profile image uploading. Fired when user choose his image
+     */
     $("#imageUploader${activeUser.customerId}").on('change', prepareLoad);
     var files;
     function prepareLoad(event) {
         files = event.target.files;
-        uploadItemImage('${activeUser.customerId}');
-    }
-    function uploadItemImage(customerId) {]
-        var oMyForm = new FormData();
-        oMyForm.append("file", files[0]);
-        $.ajax({
-            url: "api/customers/" + customerId + "/image",
-            data: oMyForm,
-            type: "POST",
-            enctype: 'multipart/form-data',
-            processData: false,
-            contentType: false,
-            dataType: "json",
-            success: function (response) {
-                var d = new Date();
-                var src = response.images['standart_128'] + "?time=" + d.getTime();
-                $('#customerImg' + customerId).prop('src', src + '?' + Math.random());
-            }
-        });
+        uploadProfileImage('${activeUser.customerId}');
     }
 </script>
 

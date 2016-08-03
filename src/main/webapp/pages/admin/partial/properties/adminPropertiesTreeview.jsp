@@ -4,6 +4,7 @@
     $(document).ready();
     treeviewInit();
 </script>
+
 <section class="sidebar">
     <ul class="inner-treeview" id="mainRootUl">
         <li class="treeview active">

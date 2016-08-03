@@ -25,6 +25,7 @@
     <script type="text/javascript" src="/resources/js/jquery.smartmenus.js"></script>
     <script type="text/javascript" src="/resources/js/jquery.smartmenus.bootstrap.js"></script>
 </head>
+
 <body class="productPage">
 <jsp:include page="../modal/modalWrapper.jsp"/>
 <jsp:include page="layout/header.jsp"/>

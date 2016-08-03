@@ -8,39 +8,6 @@
     <title>Web shop | Products</title>
     <jsp:include page="../reference/commonReferences.jsp"/>
     <jsp:include page="../reference/adminReferences.jsp"/>
-    <script>
-        $(document).ready();
-        $('#topFilterForm').submit(function (e) {
-            e.preventDefault();
-            submitForm('${page}');
-        });
-        $('#propertiesFilterForm').submit(function (e) {
-            e.preventDefault();
-            submitForm('${page}');
-        });
-        function submitForm(page) {
-            var json = {};
-            var input = $('#priceTo');
-            json[input.attr("name")] = input.val();
-            var input = $('#priceFrom');
-            json[input.attr("name")] = input.val();
-
-            var input = $('#limit');
-            json[input.attr("name")] = input.val();
-            var input = $('#sortDirection');
-            json[input.attr("name")] = input.val();
-            var input = $('#sortBy');
-            json[input.attr("name")] = input.val();
-            var properties = [];
-            $("input[type=checkbox].propertyId:checked").each(function (i) {
-                properties.push($(this).val());
-            });
-            var domain = location.protocol + '//' + location.host + location.pathname;
-            if (page == null || page < 0)page = 0;
-            if (page >${pageCount})page = ${pageCount};
-            window.location.href = domain + "?" + jQuery.param(json) + "&page=" + page + "&properties=" + properties.join();
-        }
-    </script>
 </head>
 <body class="productPage">
 
@@ -194,3 +161,46 @@
 </body>
 </html>
 <script src="/resources/js/custom.js"></script>
+<script>
+    $(document).ready();
+
+    /**
+     * Handling all submittings
+     */
+    $('#topFilterForm').submit(function (e) {
+        e.preventDefault();
+        submitForm('${page}');
+    });
+    $('#propertiesFilterForm').submit(function (e) {
+        e.preventDefault();
+        submitForm('${page}');
+    });
+
+    /**
+     * Retrieving data and sending to controller
+     * @param page
+     */
+    function submitForm(page) {
+        var json = {};
+        var input = $('#priceTo');
+        json[input.attr("name")] = input.val();
+        var input = $('#priceFrom');
+        json[input.attr("name")] = input.val();
+
+        var input = $('#limit');
+        json[input.attr("name")] = input.val();
+        var input = $('#sortDirection');
+        json[input.attr("name")] = input.val();
+        var input = $('#sortBy');
+        json[input.attr("name")] = input.val();
+        var properties = [];
+        $("input[type=checkbox].propertyId:checked").each(function (i) {
+            properties.push($(this).val());
+        });
+        var domain = location.protocol + '//' + location.host + location.pathname;
+        if (page == null || page < 0)page = 0;
+        if (page >${pageCount})page = ${pageCount};
+        //new reference
+        window.location.href = domain + "?" + jQuery.param(json) + "&page=" + page + "&properties=" + properties.join();
+    }
+</script>

@@ -4,9 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Web Shop | Profile</title>
-    <script>
-        $(document).ready();
-    </script>
+
     <jsp:include page="../reference/commonReferences.jsp"/>
     <jsp:include page="../reference/adminReferences.jsp"/>
 </head>

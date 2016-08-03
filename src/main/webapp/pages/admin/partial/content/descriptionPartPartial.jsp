@@ -118,6 +118,11 @@
     </div>
 </div>
 <script>
+
+    /**
+     * Changing description part
+     * Submiting form
+     */
     $('#descriptionPartForm${description.descriptionPartId}').submit(function (e) {
         var frm = $('#descriptionPartForm${description.descriptionPartId}');
         e.preventDefault();
@@ -141,6 +146,9 @@
         });
     });
 
+    /**
+     * Uploading description image
+     */
     $("#descriptionFileUploader${description.descriptionPartId}").on('change', prepareLoad);
     var files;
     function prepareLoad(event) {

@@ -10,14 +10,13 @@
         WebShop Admin Advertisements
     </h1>
     <ol class="breadcrumb">
-        <li onclick="changeAdminContent('dashboard')"><a class="cursor-hand"><i
+        <li><a class="cursor-hand"><i
                 class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
         <li onclick="changeAdminContent('full')"><a class="cursor-hand"><i
                 class="fa fa-sitemap"></i> <span>Content treeview</span></a></li>
         <li class="active">Advertisements</li>
     </ol>
 </section>
-
 
 <section class="content">
     <div class="row form-group">
@@ -36,34 +35,5 @@
         </div>
     </div>
 </section>
-
-<script>
-    function AddNewAdvertisement() {
-        $.ajax({
-            type: "POST",
-            url: "api/adv",
-            dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({title: "New advertisement", body: "Advertisement body"}),
-            success: function (response) {
-                $.ajax({
-                    type: "GET",
-                    url: "admin/adv/" + response.advertisementId,
-                    dataType: "html",
-                    success: function (response) {
-                        document.getElementById('advertisementContainer').innerHTML += response;
-                        location.reload();
-                    },
-                    error: function (xhr, ajaxOptions, thrownError) {
-                        location.reload();
-                    }
-                });
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log(errorThrown);
-            }
-        });
-    }
-</script>
 
 

@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
 <div class="aa-sidebar-price-range">
     <div>
         <div class="row-fluid form-group">
@@ -24,6 +25,9 @@
     </div>
 </div>
 <script>
+    /**
+     * Initializing price slider
+     */
     $(function () {
         $("#slider-range").slider({
             range: true,
@@ -37,8 +41,6 @@
         });
         $("#priceFrom").val($("#slider-range").slider("values", 0));
         $("#priceTo").val($("#slider-range").slider("values", 1));
-
-//                $("#slider").slider('option',{min: 0, max: 500});
 
         $("#priceFrom").bind('keyup mouseup change input', function () {
             var min = $("#slider-range").slider("option", "min");

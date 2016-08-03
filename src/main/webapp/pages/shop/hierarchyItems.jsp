@@ -30,16 +30,16 @@
                 <div class="aa-product-catg-content  no-padding">
                     <div class="aa-product-catg-body no-margin">
                         <ul class="aa-product-catg">
-                            <c:forEach items="${items}" var="item">
-                                <li onclick="location.href='${hrefParentPrefix}${item.id}${hrefChildSuffix}'"
+                            <c:forEach items="${items}" var="loopItem">
+                                <li onclick="location.href='${hrefParentPrefix}${loopItem.id}${hrefChildSuffix}'"
                                     class="small-li stretch">
                                     <figure class="height-130">
                                         <a class="aa-product-img cursor-hand">
-                                            <img src="${item.images['standart_128']}" class="max-height-128"></a>
+                                            <img src="${loopItem.images['standart_128']}" class="max-height-128"></a>
                                     </figure>
                                     <figcaption>
                                         <h4 class="aa-product-title"><a
-                                                class="cursor-hand">${item.title}</a>
+                                                class="cursor-hand">${loopItem.title}</a>
                                         </h4>
                                     </figcaption>
                                     <span class="aa-badge aa-sale cursor-hand">${contentType}</span>

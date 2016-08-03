@@ -1,9 +1,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=utf-8" %>
-<script>
-    $(document).ready();
-</script>
+
 <div class="navbar-custom-menu">
     <c:choose>
         <c:when test="${empty pageContext.request.userPrincipal}">

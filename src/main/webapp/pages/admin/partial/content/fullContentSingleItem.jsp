@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <section id="aa-product-details">
     <div class="aa-product-details-area">
         <div class="aa-product-details-content" style="width: 100%">
@@ -112,8 +113,15 @@
     </div>
 </section>
 <script>
+
+    /**
+     * Initialize select 2 controls
+     */
     $(".select2").select2();
 
+    /**
+     * Uploading images
+     */
     $("#categorySelect").change(function () {
         categorySelection('categorySelect', 'subcategorySelect', 'groupSelect');
     });
@@ -137,29 +145,12 @@
             }
         });
     });
+
     $("#contentItem${objectId}").on('change', prepareLoad);
     var files;
     function prepareLoad(event) {
         files = event.target.files;
         uploadItemImage('${type}', '${objectId}');
-    }
-    function uploadItemImage(type, objectId) {
-        var oMyForm = new FormData();
-        oMyForm.append("file", files[0]);
-        $.ajax({
-            url: "api/" + type + "/" + objectId + "/image",
-            data: oMyForm,
-            type: "POST",
-            enctype: 'multipart/form-data',
-            processData: false,
-            contentType: false,
-            dataType: "json",
-            success: function (response) {
-                var d = new Date();
-                var src = response.images['standart_128'] + "?time=" + d.getTime();
-                $('#itemImage').prop('src', src + '?' + Math.random());
-            }
-        });
     }
 
     $(document).ready();

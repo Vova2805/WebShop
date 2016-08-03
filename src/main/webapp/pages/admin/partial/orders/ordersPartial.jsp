@@ -1,7 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<script>
-    $(document).ready();
-</script>
+
 <link rel="stylesheet" href="/resources/plugins/select2/select2.min.css">
 <script src="/resources/plugins/select2/select2.full.min.js"></script>
 <section class="content-header">

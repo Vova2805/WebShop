@@ -114,98 +114,97 @@
     </div>
 </section>
 
-<c:if test="${showBottom==true}">
-    <section class="aa-popular-category">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="aa-popular-category-area">
-                            <ul class="nav nav-tabs aa-goods-tab">
-                                <c:forEach items="${popularNewestProductMap.keySet()}" var="title"
-                                           varStatus="loop">
-                                    <c:choose>
-                                        <c:when test="${loop.first}">
-                                            <c:set var="liClass" scope="request" value="active"/>
-                                        </c:when>
-                                        <c:otherwise>
-                                            <c:set var="liClass" scope="request" value=""/>
-                                        </c:otherwise>
-                                    </c:choose>
-                                    <li class="${liClass}"><a href="#paneBottom${title}"
-                                                              data-toggle="tab">${title}</a></li>
-                                </c:forEach>
-                            </ul>
+<section class="aa-popular-category">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="aa-popular-category-area">
+                        <ul class="nav nav-tabs aa-goods-tab">
+                            <c:forEach items="${popularNewestProductMap.keySet()}" var="title"
+                                       varStatus="loop">
+                                <c:choose>
+                                    <c:when test="${loop.first}">
+                                        <c:set var="liClass" scope="request" value="active"/>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:set var="liClass" scope="request" value=""/>
+                                    </c:otherwise>
+                                </c:choose>
+                                <li class="${liClass}"><a href="#paneBottom${title}"
+                                                          data-toggle="tab">${title}</a></li>
+                            </c:forEach>
+                        </ul>
 
-                            <div class="tab-content">
-                                <c:forEach items="${popularNewestProductMap.keySet()}" var="title" varStatus="loop">
-                                    <c:choose>
-                                        <c:when test="${loop.first}">
-                                            <c:set var="contentClasses" scope="request"
-                                                   value="tab-pane fade in active "/>
-                                        </c:when>
-                                        <c:otherwise>
-                                            <c:set var="contentClasses" scope="request" value="tab-pane fade"/>
-                                        </c:otherwise>
-                                    </c:choose>
-                                    <div class="${contentClasses}" id="paneBottom${title}">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <a class="pull-right left fa fa-chevron-left btn btn-success btn-not-rounded margin-top--40 margin-right-20"
-                                                   href="#carousel${title}" data-slide="prev"></a>
-                                                <a class="pull-right right fa fa-chevron-right btn btn-success btn-not-rounded margin-top--40"
-                                                   href="#carousel${title}" data-slide="next"></a>
-                                            </div>
-                                        </div>
-                                        <div id="carousel${title}" class="carousel slide hidden-xs"
-                                             data-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <c:set var="blockCount"
-                                                       value="${popularNewestProductMap[title].size()/4}"/>
-                                                <c:if test="${blockCount*4<popularNewestProductMap[title].size() && popularNewestProductMap[title].size()>0}">
-                                                    <c:set var="blockCount" value="${blockCount-1}"/>
-                                                </c:if>
-                                                <c:forEach var="i" begin="0" end="${blockCount}">
-                                                    <c:set var="activeClass" value=""/>
-                                                    <c:if test="${i==0}">
-                                                        <c:set var="activeClass" value="active"/>
-                                                    </c:if>
-                                                    <div class="item ${activeClass}">
-                                                        <div class="row no-margin padding-center">
-                                                            <ul class="aa-product-catg aa-popular-slider no-border">
-                                                                <c:if test="${0<popularNewestProductMap[title].size()}">
-                                                                    <c:set var="endIndex" value="${4*i+3}"/>
-                                                                    <c:if test="${endIndex>=popularNewestProductMap[title].size() }">
-                                                                        <c:set var="endIndex"
-                                                                               value="${popularNewestProductMap[title].size()-1}"/>
-                                                                    </c:if>
-                                                                    <c:forEach var="index" begin="${4*i}"
-                                                                               end="${endIndex}">
-                                                                        <c:set var="productItem"
-                                                                               value="${popularNewestProductMap[title][index]}"/>
-                                                                        <c:set var="productItem" value="${productItem}"
-                                                                               scope="request"/>
-                                                                        <jsp:include
-                                                                                page="shop/partial/productView.jsp"/>
-                                                                    </c:forEach>
-                                                                </c:if>
-
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </c:forEach>
-                                            </div>
+                        <div class="tab-content">
+                            <c:forEach items="${popularNewestProductMap.keySet()}" var="title" varStatus="loop">
+                                <c:choose>
+                                    <c:when test="${loop.first}">
+                                        <c:set var="contentClasses" scope="request"
+                                               value="tab-pane fade in active "/>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:set var="contentClasses" scope="request" value="tab-pane fade"/>
+                                    </c:otherwise>
+                                </c:choose>
+                                <div class="${contentClasses}" id="paneBottom${title}">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a class="pull-right left fa fa-chevron-left btn btn-success btn-not-rounded margin-top--40 margin-right-20"
+                                               href="#carousel${title}" data-slide="prev"></a>
+                                            <a class="pull-right right fa fa-chevron-right btn btn-success btn-not-rounded margin-top--40"
+                                               href="#carousel${title}" data-slide="next"></a>
                                         </div>
                                     </div>
-                                </c:forEach>
-                            </div>
+                                    <div id="carousel${title}" class="carousel slide hidden-xs"
+                                         data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <c:set var="blockCount"
+                                                   value="${popularNewestProductMap[title].size()/4}"/>
+                                            <c:if test="${blockCount*4<popularNewestProductMap[title].size() && popularNewestProductMap[title].size()>0}">
+                                                <c:set var="blockCount" value="${blockCount-1}"/>
+                                            </c:if>
+                                            <c:forEach var="i" begin="0" end="${blockCount}">
+                                                <c:set var="activeClass" value=""/>
+                                                <c:if test="${i==0}">
+                                                    <c:set var="activeClass" value="active"/>
+                                                </c:if>
+                                                <div class="item ${activeClass}">
+                                                    <div class="row no-margin padding-center">
+                                                        <ul class="aa-product-catg aa-popular-slider no-border">
+                                                            <c:if test="${0<popularNewestProductMap[title].size()}">
+                                                                <c:set var="endIndex" value="${4*i+3}"/>
+                                                                <c:if test="${endIndex>=popularNewestProductMap[title].size() }">
+                                                                    <c:set var="endIndex"
+                                                                           value="${popularNewestProductMap[title].size()-1}"/>
+                                                                </c:if>
+                                                                <c:forEach var="index" begin="${4*i}"
+                                                                           end="${endIndex}">
+                                                                    <c:set var="productItem"
+                                                                           value="${popularNewestProductMap[title][index]}"/>
+                                                                    <c:set var="productItem" value="${productItem}"
+                                                                           scope="request"/>
+                                                                    <jsp:include
+                                                                            page="shop/partial/productView.jsp"/>
+                                                                </c:forEach>
+                                                            </c:if>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </c:forEach>
+                                        </div>
+                                    </div>
+                                </div>
+                            </c:forEach>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</c:if>
+    </div>
+</section>
+
 
 <jsp:include page="shop/layout/subscribe.jsp"/>
 <jsp:include page="shop/layout/footer.jsp"/>

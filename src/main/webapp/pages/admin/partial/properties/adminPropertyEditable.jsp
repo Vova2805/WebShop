@@ -1,29 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<script>
-    $('#updatePropertyForm').submit(function (e) {
-        var frm = $('#updatePropertyForm');
-        e.preventDefault();
-        var data = {};
-        $.each(this, function (i, v) {
-            var input = $(v);
-            data[input.attr("name")] = input.val();
-            delete data["undefined"];
-        });
-        $.ajax({
-            contentType: 'application/json; charset=utf-8',
-            type: "PUT",
-            url: "api/properties/${property.propertyId}",
-            dataType: 'json',
-            data: JSON.stringify(data),
-            success: function (response) {
-                document.getElementById('propertyItem${property.propertyId}').innerHTML = response.propertyValue;
-//                location.reload();
-            }
-        });
-    });
-    $(".select2").select2();
-</script>
+
 <form:form id="updatePropertyForm" class="aa-review-form">
     <div class="content min-height-255 no-padding-top">
         <div class="row form-group">
@@ -72,3 +49,34 @@
         </div>
     </div>
 </form:form>
+
+<script>
+    /**
+     * Changing property
+     * Submiting form
+     */
+    $('#updatePropertyForm').submit(function (e) {
+        var frm = $('#updatePropertyForm');
+        e.preventDefault();
+        var data = {};
+        $.each(this, function (i, v) {
+            var input = $(v);
+            data[input.attr("name")] = input.val();
+            delete data["undefined"];
+        });
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            type: "PUT",
+            url: "api/properties/${property.propertyId}",
+            dataType: 'json',
+            data: JSON.stringify(data),
+            success: function (response) {
+                document.getElementById('propertyItem${property.propertyId}').innerHTML = response.propertyValue;
+            }
+        });
+    });
+    /**
+     * Init for all select
+     */
+    $(".select2").select2();
+</script>

@@ -24,6 +24,9 @@
 <link rel="stylesheet" href="/resources/plugins/select2/select2.min.css">
 <script src="/resources/plugins/select2/select2.full.min.js"></script>
 <script>
+    /**
+     * Searching product using api and select2 plugin
+     */
     $(".searchingSelect").select2(
             {
                 ajax: {
@@ -63,7 +66,6 @@
                             '</div>' +
                             '</div>' +
                             '</a>';
-                    ;
                 },
                 templateSelection: function (option) {
                     return option.title;

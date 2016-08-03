@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <li class="treeview active" id="propertyLi${loopProperty.propertyId}">
     <a class="cursor-hand" onclick="changeAdminPropertiesInnerBlock('property',${loopProperty.propertyId})">
         <i class="fa fa-folder"></i>

@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <div id="accordion${entry.key}" role="tablist" aria-multiselectable="true">
     <div class="aa-sidebar-widget padding-left-15">
         <div class="panel-heading no-padding-right-left" role="tab" id="header${entry.key}">

@@ -14,7 +14,6 @@
                         <label for="log-password">Password<span>*</span></label>
                         <input type="password" id="log-password" placeholder="Password" name="password">
                         <button type="submit" name="submit" class="btn btn-default aa-review-submit">Login</button>
-                        <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me
                         </label>
                         <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
                         <div class="aa-register-now">

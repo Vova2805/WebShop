@@ -118,42 +118,10 @@
     var files;
     function prepareLoad(event) {
         files = event.target.files;
-        uploadItemImage('${advertisement.advertisementId}');
+        uploadAdvImage('${advertisement.advertisementId}');
     }
-    function uploadItemImage(objectId) {
-        var oMyForm = new FormData();
-        oMyForm.append("file", files[0]);
-        $.ajax({
-            url: "api/adv/" + objectId + "/image",
-            data: oMyForm,
-            type: "POST",
-            enctype: 'multipart/form-data',
-            processData: false,
-            contentType: false,
-            dataType: "json",
-            success: function (response) {
-                var d = new Date();
-                var src = response.images['huge'] + "?time=" + d.getTime();
-                $('#advertImg' + objectId).prop('src', src + '?' + Math.random());
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log(errorThrown);
-            }
-        });
-    }
-    function deleteAdvertisement(advertId) {
-        $.ajax({
-            type: "DELETE",
-            url: "api/adv/" + advertId,
-            dataType: "json",
-            success: function (response) {
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log(errorThrown);
-            }
-        });
-        location.reload();
-    }
+
+
     $("#searchingSelect${advertisement.advertisementId}").select2(
             {
                 ajax: {
@@ -199,21 +167,5 @@
                 }
             }
     );
-
-    function setHref(href, advId) {
-        $.ajax({
-            contentType: 'application/json; charset=utf-8',
-            type: "POST",
-            url: "api/adv/" + advId,
-            dataType: 'json',
-            data: JSON.stringify({buttonHref: href}),
-            success: function (response) {
-                document.getElementById('ref' + advId).innerHTML = '<a  href="' + href + '"> ' + href + '</a>';
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log(errorThrown);
-            }
-        });
-    }
     $(document).ready();
 </script>

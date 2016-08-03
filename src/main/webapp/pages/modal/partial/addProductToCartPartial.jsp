@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=utf-8" %>
+
 <div class="row">
     <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="aa-product-view-slider">
@@ -58,6 +59,9 @@
 </div>
 
 <script>
+    /**
+     * Handling changes of amount
+     */
     $('#amount${product.productId}').on("input", function () {
         var price = ${product.price};
         var amount = ($("#amount${product.productId}").val());
@@ -65,27 +69,6 @@
         var outputStr = "Total : ${currency} " + total;
         $("#result${product.productId}").text(outputStr);
     });
-
-    function addProductToCart(productId, amount) {
-        var json = {
-            productId: productId,
-            amount: amount
-        };
-        $.ajax({
-            type: "POST",
-            url: 'api/cart',
-            dataType: "json",
-            contentType: 'application/json; charset=utf-8',
-            data: JSON.stringify(json),
-            success: function (response) {
-                //change menu
-                updateUserMenuItems('cartMenu');
-            },
-            error: function (code) {
-                console.log(code);
-            }
-        });
-    }
 </script>
 
 

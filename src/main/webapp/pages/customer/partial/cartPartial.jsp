@@ -1,10 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<script>
-    $(document).ready();
-</script>
-
 <section class="content-header">
     <h1>
         My cart
@@ -105,48 +101,5 @@
         </div>
     </div>
 </section>
-<script>
-
-    function changeCartQuantity(cartId, amount) {
-        $.ajax({
-            type: "POST",
-            url: 'api/cart/' + cartId,
-            dataType: "json",
-            contentType: 'application/json; charset=utf-8',
-            data: JSON.stringify({amount: amount}),
-            success: function (response) {
-                $.ajax({
-                    type: "GET",
-                    url: 'api/cart/total',
-                    dataType: "json",
-                    success: function (response) {
-                        $("#total").text("${currency} " + response.total);
-                    },
-                    error: function (code) {
-                        console.log(code);
-                    }
-                });
-            },
-            error: function (code) {
-                console.log(code);
-            }
-        });
-    }
-    function removeCartItem(cartId) {
-        $.ajax({
-            type: "DELETE",
-            url: 'api/cart/' + cartId,
-            dataType: "json",
-            success: function (response) {
-                location.reload();
-            },
-            error: function (code) {
-                console.log(code);
-            }
-        });
-    }
-</script>
-
-
 
 

@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <div class="aa-product-view-content">
     <div id="previewData">
         <div class="content min-height-255 no-padding-top">
@@ -142,6 +143,10 @@
 </div>
 
 <script>
+
+    /**
+     * On submit for edit profile form. Sending to RestController and handling response
+     */
     $('#editProfileForm').submit(function (e) {
         var frm = $('#editProfileForm');
         e.preventDefault();
@@ -163,6 +168,9 @@
         });
     });
 
+    /**
+     * Change password form on submit
+     */
     $('#changePasswordForm').submit(function (e) {
         var frm = $('#changePasswordForm');
         e.preventDefault();

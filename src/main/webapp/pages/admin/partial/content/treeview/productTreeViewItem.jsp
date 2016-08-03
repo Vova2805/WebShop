@@ -1,8 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<script>
-    $(document).ready();
-</script>
 
 <li id="productLi${product.productId}">
     <a class="cursor-hand" onclick="changeAdminContentInnerBlock('goods',${product.productId})">

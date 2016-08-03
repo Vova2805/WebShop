@@ -46,9 +46,9 @@
                                                     <td><a href="#"><img src="resources/img/man/polo-shirt-1.png"
                                                                          alt="img"></a>
                                                     </td>
-                                                    <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
-                                                    <td>$250</td>
-                                                    <td>In Stock</td>
+                                                    <td><a class="aa-cart-title" href="#"></a></td>
+                                                    <td></td>
+                                                    <td></td>
                                                     <td><a href="#" class="aa-add-to-cart-btn">Add To Cart</a></td>
                                                 </tr>
                                             </c:forEach>

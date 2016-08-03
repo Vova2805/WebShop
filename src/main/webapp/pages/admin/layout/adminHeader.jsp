@@ -17,8 +17,6 @@
 <%--</div>--%>
 <%--</div>--%>
 
-<%--<a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>--%>
-
 <header class="main-header border-bottom">
 
     <a href="/" class="logo">

@@ -1,7 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<script>
-    //    $(document).ready();
-</script>
+
 <li class="preview-large no-margin-top">
     <figure>
         <a href="/goods/${currentProduct.productId}"

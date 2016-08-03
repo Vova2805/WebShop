@@ -1,9 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<script>
-    $(document).ready();
-</script>
+
 <tr id="order${order.productOrderId}" data-toggle="collapse" data-target="#orderContent${order.productOrderId}"
     class="accordion-toggle">
     <sec:authorize access="hasAnyRole('SUPERADMIN','ADMIN')">
@@ -106,15 +104,11 @@
 </tr>
 
 <script>
-    function formatState(state) {
-        if (!state.id) {
-            return state.text;
-        }
-        var $state = $(
-                '<span class="label label-success">' + state.text + '</span>'
-        );
-        return $state;
-    }
+
+    /**
+     * Initialize select
+     * and event on select
+     */
     $("#statusSelect").select2();
     $("#statusSelect").on("select2:select", function (e) {
         var json = JSON.stringify(e.params, function (key, value) {
