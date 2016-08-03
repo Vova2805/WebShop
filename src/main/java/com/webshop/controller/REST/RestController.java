@@ -427,10 +427,8 @@ public class RestController extends CommonController {
         Integer imageId = getIdFromString(ids);
         Integer productId = getIdFromString(prodIds);
         if (imageId != null && productId != null) {
-            //TODO check if product contains image
-            Product product = productService.get(productId);
             imageService.delete(imageId);
-            return "success";
+            return toGSON("id", imageId.toString());
         }
         return "error";
     }
@@ -916,7 +914,6 @@ public class RestController extends CommonController {
             String password = customer.getPassword();
             BeanUtils.populate(customer, parameters);
             if (customerService.getCustomer(customer.getCustomerName()).size() > 1) {
-                //TODO error - this customer already exists
                 customer.setCustomerName(name);
             }
             Address address = customer.getAddressByAddressId();

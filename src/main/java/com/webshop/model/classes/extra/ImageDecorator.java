@@ -124,17 +124,12 @@ public abstract class ImageDecorator implements IImage {
         if (!(new File(getRealBaseImgURL() + foldersPath).exists())) {
             makeDir(getRealBaseImgURL() + foldersPath);
         }
-        //TODO remove testing
-        String projectFolderPath = "/Users/volodymyrdudas/Desktop/WebShop/src/main/webapp/resources/img/" + foldersPath;
-        makeDir(projectFolderPath);
 
         for (ImageSize size : sizes) {
             String filePath = getRealBaseImgURL() + foldersPath + imageTitle + getExtension(size);
             BufferedImage image = ImageResizer.resizeImage(bytes, size.getWidth(), size.getHeight());
 
             ImageIO.write(image, IMAGE_EXTENSION, new File(filePath));
-            //for testing
-            ImageIO.write(image, IMAGE_EXTENSION, new File(projectFolderPath + imageTitle + getExtension(size)));
         }
     }
 
@@ -149,13 +144,9 @@ public abstract class ImageDecorator implements IImage {
         if (fullPath.contains("res/")) return;
         //if not
         for (ImageSize size : sizes) {
-            //TODO remove testing
-            String projectFolderPath = "/Users/volodymyrdudas/Desktop/WebShop/src/main/webapp/resources/img/" + fullPath;
             String path = getRealBaseImgURL() + fullPath + getExtension(size);
             File file = new File(path);
-            File file2 = new File(projectFolderPath + getExtension(size));
             file.delete();
-            file2.delete();
         }
     }
 

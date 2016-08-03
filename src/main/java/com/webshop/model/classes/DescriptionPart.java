@@ -99,10 +99,8 @@ public class DescriptionPart extends ImageDecorator {
         if (productId != that.productId) return false;
         if (descriptionPartHeader != null ? !descriptionPartHeader.equals(that.descriptionPartHeader) : that.descriptionPartHeader != null)
             return false;
-        if (descriptionPartBody != null ? !descriptionPartBody.equals(that.descriptionPartBody) : that.descriptionPartBody != null)
-            return false;
+        return descriptionPartBody != null ? descriptionPartBody.equals(that.descriptionPartBody) : that.descriptionPartBody == null;
 
-        return true;
     }
 
     @Override
@@ -171,15 +169,11 @@ public class DescriptionPart extends ImageDecorator {
         String folderPath = getFolderPath();
         String imageTitle = getImageTitle(productId);
         makeDir(folderPath);
-        //TODO remove testing
-        String projectFolderPath = "/Users/volodymyrdudas/Desktop/WebShop/src/main/webapp/resources/img/descr/" + folderTitle + "/";
-        makeDir(projectFolderPath);
 
         String filePath = folderPath + imageTitle;
         BufferedImage image = ImageIO.read(new ByteArrayInputStream(bytes));
 
         ImageIO.write(image, IMAGE_EXTENSION, new File(filePath));
-        ImageIO.write(image, IMAGE_EXTENSION, new File(projectFolderPath + imageTitle));
         this.hasImg = true;
     }
 
