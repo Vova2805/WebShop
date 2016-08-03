@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/webshopdb</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+        <mapping class="com.webshop.model.classes.Address"/>
+        <mapping class="com.webshop.model.classes.AdminLog"/>
+        <mapping class="com.webshop.model.classes.Answer"/>
+        <mapping class="com.webshop.model.classes.Cart"/>
+        <mapping class="com.webshop.model.classes.Category"/>
+        <mapping class="com.webshop.model.classes.Comment"/>
+        <mapping class="com.webshop.model.classes.Comparison"/>
+        <mapping class="com.webshop.model.classes.Product"/>
+        <mapping class="com.webshop.model.classes.Customer"/>
+        <mapping class="com.webshop.model.classes.DescriptionPart"/>
+        <mapping class="com.webshop.model.classes.Image"/>
+        <mapping class="com.webshop.model.classes.Product"/>
+        <mapping class="com.webshop.model.classes.ProductOrder"/>
+        <mapping class="com.webshop.model.classes.Property"/>
+        <mapping class="com.webshop.model.classes.PropertyClass"/>
+        <mapping class="com.webshop.model.classes.Report"/>
+        <mapping class="com.webshop.model.classes.Role"/>
+        <mapping class="com.webshop.model.classes.Subcategory"/>
+        <mapping class="com.webshop.model.classes.SubcategoryGroup"/>
+        <mapping class="com.webshop.model.classes.ViewedProduct"/>
+        <mapping class="com.webshop.model.classes.WatchedPrice"/>
+        <mapping class="com.webshop.model.classes.Wish"/>
+        <mapping class="com.webshop.model.classes.Advertisement"/>
+        <mapping class="com.webshop.model.classes.Shop"/>
+        <mapping class="com.webshop.model.classes.SubscribedUser"/>
+        <mapping class="com.webshop.model.classes.ProductOrderProduct"/>
+    </session-factory>
+</hibernate-configuration>
+

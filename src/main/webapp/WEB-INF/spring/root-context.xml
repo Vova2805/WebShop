@@ -1,0 +1,123 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <mvc:annotation-driven>
+        <mvc:argument-resolvers>
+            <bean class="com.webshop.anotation.CurrentUserHandlerMethodArgumentResolver"/>
+        </mvc:argument-resolvers>
+    </mvc:annotation-driven>
+
+    <!-- generic dao beans -->
+
+    <bean id="genericDAO" class="com.webshop.dao.generic.GenericDAOImpl">
+    </bean>
+
+    <bean id="customerDAO" class="com.webshop.dao.implement.CustomerDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Customer"/>
+    </bean>
+
+    <bean id="roleDAO" class="com.webshop.dao.implement.RoleDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Role"/>
+    </bean>
+
+    <bean id="advertisementDAO" class="com.webshop.dao.implement.AdvertisementDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Advertisement"/>
+    </bean>
+
+    <bean id="categoryDAO" class="com.webshop.dao.implement.CategoryDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Category"/>
+    </bean>
+
+    <bean id="subcategoryDAO" class="com.webshop.dao.implement.SubcategoryDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Subcategory"/>
+    </bean>
+
+    <bean id="groupDAO" class="com.webshop.dao.implement.GroupDAOImpl">
+        <property name="type" value="com.webshop.model.classes.SubcategoryGroup"/>
+    </bean>
+
+    <bean id="productDAO" class="com.webshop.dao.implement.ProductDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Product"/>
+    </bean>
+
+    <bean id="propertyClassDAO" class="com.webshop.dao.implement.PropertyClassDAOImpl">
+        <property name="type" value="com.webshop.model.classes.PropertyClass"/>
+    </bean>
+
+    <bean id="propertyDAO" class="com.webshop.dao.implement.PropertyDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Property"/>
+    </bean>
+
+    <bean id="commentDAO" class="com.webshop.dao.implement.CommentDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Comment"/>
+    </bean>
+
+    <bean id="imageDAO" class="com.webshop.dao.implement.ImageDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Image"/>
+    </bean>
+
+    <bean id="descriptionDAO" class="com.webshop.dao.implement.DescriptionDAOImpl">
+        <property name="type" value="com.webshop.model.classes.DescriptionPart"/>
+    </bean>
+
+    <bean id="orderDAO" class="com.webshop.dao.implement.OrderDAOImpl">
+        <property name="type" value="com.webshop.model.classes.ProductOrder"/>
+    </bean>
+
+    <bean id="subscribedUserDAO" class="com.webshop.dao.implement.SubscribedUserDAOImpl">
+        <property name="type" value="com.webshop.model.classes.SubscribedUser"/>
+    </bean>
+
+    <bean id="addressDAO" class="com.webshop.dao.implement.AddressDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Address"/>
+    </bean>
+
+    <bean id="cartDAO" class="com.webshop.dao.implement.CartDAOImpl">
+        <property name="type" value="com.webshop.model.classes.Cart"/>
+    </bean>
+
+    <bean id="productOrderDAO" class="com.webshop.dao.implement.ProductOrderDAOImpl">
+        <property name="type" value="com.webshop.model.classes.ProductOrderProduct"/>
+    </bean>
+
+    <!--end of generic dao beans -->
+
+    <import resource="database.xml"/>
+    <import resource="spring-security.xml"/>
+
+    <context:annotation-config/>
+
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.mail.ru"/>
+        <property name="port" value="465"/>
+        <property name="username" value="webshop.lviv2016@mail.ru"/>
+        <property name="password" value="12345qwert"/>
+
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.transport.protocol">smtps</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+                <prop key="mail.debug">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>
+
+
+
+
+
