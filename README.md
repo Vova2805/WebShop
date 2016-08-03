@@ -1,5 +1,7 @@
 # WebShop
 
+#[Quick view](https://www.youtube.com/watch?v=x_efAIwwYz8&ab_channel=VovaDudas)
+
 #Technologies: 
   - Java 8
   - Spring MVC - divide business logic, view and controller
