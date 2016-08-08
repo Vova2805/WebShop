@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface IFilter {
 
     /**
-     * Static methos for merging two sets (lists) with or option
+     * Static method for merging two sets (lists) with or option
      *
      * @param goods1
      * @param goods2
@@ -25,7 +25,7 @@ public interface IFilter {
     }
 
     /**
-     * Static methos for merging two sets (lists) with and option
+     * Static method for merging two sets (lists) with and option
      *
      * @param goods1
      * @param goods2
@@ -48,7 +48,7 @@ public interface IFilter {
     }
 
     /**
-     * Main mehtod for filtering goods
+     * Main method for filtering goods
      *
      * @param goods
      * @return
